@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "metagpt-assignment"
+version = "0.1.0"
+description = ""
+authors = ["revupst <revup123456@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.11,<3.12"
+metagpt = "0.5.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
