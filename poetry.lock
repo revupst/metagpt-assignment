@@ -698,6 +698,20 @@ testing = ["covdefaults (>=2.3)", "coverage (>=7.3.2)", "diff-cover (>=8)", "pyt
 typing = ["typing-extensions (>=4.8)"]
 
 [[package]]
+name = "fire"
+version = "0.5.0"
+description = "A library for automatically generating command line interfaces."
+optional = false
+python-versions = "*"
+files = [
+    {file = "fire-0.5.0.tar.gz", hash = "sha256:a6b0d49e98c8963910021f92bba66f65ab440da2982b78eb1bbf95a0a34aacc6"},
+]
+
+[package.dependencies]
+six = "*"
+termcolor = "*"
+
+[[package]]
 name = "frozenlist"
 version = "1.4.1"
 description = "A list-like structure which implements collections.abc.MutableSequence"
@@ -4064,4 +4078,4 @@ testing = ["big-O", "jaraco.functools", "jaraco.itertools", "more-itertools", "p
 [metadata]
 lock-version = "2.0"
 python-versions = ">=3.11,<3.12"
-content-hash = "ecbe0cf4af521279a9127697e5968f21a5d18ee06dd9955a3ae588776dab4b8d"
+content-hash = "439cce043356b16dba1963a42a492d2d67bc6f6a12364dc67b0b4e10d29ecc1d"
