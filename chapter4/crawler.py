@@ -1,5 +1,4 @@
 import asyncio
-import os
 
 import aiohttp
 from bs4 import BeautifulSoup
@@ -68,20 +67,9 @@ class CrawlOSSTrending(Action):
         return repositories
 
 
-async def fetch(session, url):
-    http_proxy = os.getenv("http_proxy")
-    async with session.get(url, proxy=http_proxy) as response:
-        return await response.text()
-
-
-async def parse(url):
-    async with aiohttp.ClientSession() as session:
-        html = await fetch(session, url)
-
-
 async def main():
-    role = CrawlOSSTrending()
-    result = await role.run()
+    action = CrawlOSSTrending()
+    result = await action.run()
     logger.info(result)
 
 
