@@ -3,18 +3,21 @@ import os
 
 import aiohttp
 from bs4 import BeautifulSoup
+from metagpt.actions.action import Action
+from metagpt.config import CONFIG
+from metagpt.logs import logger
 
 
-async def fetch(session, url):
-    http_proxy = os.getenv("http_proxy")
-    async with session.get(url, proxy=http_proxy) as response:
-        return await response.text()
+class CrawlOSSTrending(Action):
+    async def run(self, url: str = "https://github.com/trending"):
+        async with aiohttp.ClientSession() as client:
+            async with client.get(url, proxy=CONFIG.global_proxy) as response:
+                response.raise_for_status()
+                html = await response.text()
 
-
-async def parse(url):
-    async with aiohttp.ClientSession() as session:
-        html = await fetch(session, url)
         soup = BeautifulSoup(html, "html.parser")
+
+        repositories = []
 
         # 解析所需字段
         for article in soup.find_all("article", class_="Box-row"):
@@ -51,22 +54,35 @@ async def parse(url):
                 else "0"
             )
 
-            print(
-                {
-                    "Repository Name": repo_name,
-                    "URL": repo_url,
-                    "Description": description,
-                    "Language": language,
-                    "Stars": stars,
-                    "Forks": forks,
-                    "Stars Today": today_stars,
-                }
-            )
+            repo_info = {
+                "name": repo_name,
+                "url": repo_url,
+                "description": description,
+                "language": language,
+                "stars": stars,
+                "forks": forks,
+                "today_stars": today_stars,
+            }
+            repositories.append(repo_info)
+
+        return repositories
+
+
+async def fetch(session, url):
+    http_proxy = os.getenv("http_proxy")
+    async with session.get(url, proxy=http_proxy) as response:
+        return await response.text()
+
+
+async def parse(url):
+    async with aiohttp.ClientSession() as session:
+        html = await fetch(session, url)
 
 
 async def main():
-    url = "https://github.com/trending"
-    await parse(url)
+    role = CrawlOSSTrending()
+    result = await role.run()
+    logger.info(result)
 
 
 if __name__ == "__main__":
