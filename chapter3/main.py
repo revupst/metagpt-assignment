@@ -1,4 +1,3 @@
-import re
 import asyncio
 
 from metagpt.actions import Action
