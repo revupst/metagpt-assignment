@@ -1,15 +1,16 @@
 import asyncio
 import aiohttp
+import os
 from bs4 import BeautifulSoup
 
 
 async def fetch(session, url):
-    async with session.get(url, proxy="http://127.0.0.1:8888") as response:
+    http_proxy = os.getenv("http_proxy")
+    async with session.get(url, proxy=http_proxy) as response:
         return await response.text()
 
 
 async def parse(url):
-    # proxydict = {"http": "http://127.0.0.1:8888", "https": "http://127.0.0.1:8888"}
     async with aiohttp.ClientSession() as session:
         html = await fetch(session, url)
         soup = BeautifulSoup(html, "html.parser")
@@ -19,24 +20,34 @@ async def parse(url):
             repo_name = article.h2.a.text.strip()
             repo_url = "https://github.com" + article.h2.a["href"]
             description = article.p.text.strip() if article.p else "No Description"
-            language = article.find(
-                "span", class_="repo-language-color"
-            ).next_sibling.strip()
+            language_elements = article.find_all("span", class_="repo-language-color")
+            language = (
+                language_elements[0].next_sibling.strip()
+                if language_elements
+                else "Unknown"
+            )
+
+            star_fork_elements = article.find_all(
+                "a", class_="Link--muted d-inline-block mr-3"
+            )
             stars = (
-                article.find_all("a", class_="Link--muted d-inline-block mr-3")[0]
-                .text.strip()
-                .replace(",", "")
+                star_fork_elements[0].text.strip().replace(",", "")
+                if len(star_fork_elements) > 0
+                else "0"
             )
             forks = (
-                article.find_all("a", class_="Link--muted d-inline-block mr-3")[1]
-                .text.strip()
-                .replace(",", "")
+                star_fork_elements[1].text.strip().replace(",", "")
+                if len(star_fork_elements) > 1
+                else "0"
+            )
+
+            today_stars_element = article.find(
+                "span", class_="d-inline-block float-sm-right"
             )
             today_stars = (
-                article.find("span", class_="d-inline-block float-sm-right")
-                .text.strip()
-                .split(" ")[0]
-                .replace(",", "")
+                today_stars_element.text.strip().split(" ")[0].replace(",", "")
+                if today_stars_element
+                else "0"
             )
 
             print(
