@@ -1,0 +1,1930 @@
+<!DOCTYPE html>
+<!-- saved from url=(0014)about:internet -->
+<html class="">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no"
+    />
+    <meta name="description" content="Your daily dose of AI research from AK" />
+    <meta property="fb:app_id" content="1321688464574422" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@huggingface" />
+    <meta property="og:title" content="Daily Papers - Hugging Face" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://huggingface.co/papers" />
+    <meta
+      property="og:image"
+      content="https://huggingface.co/front/thumbnails/papers.png"
+    />
+
+    <link rel="stylesheet" href="./huggingface-papers-raw_files/style.css" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com/" />
+    <link href="./huggingface-papers-raw_files/css2" rel="stylesheet" />
+    <link href="./huggingface-papers-raw_files/css2(1)" rel="stylesheet" />
+
+    <link
+      rel="stylesheet"
+      href="./huggingface-papers-raw_files/katex.min.css"
+      as="style"
+      onload="this.onload=null;this.rel=&#39;stylesheet&#39;"
+    />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.12.0/katex.min.css"
+      />
+    </noscript>
+
+    <title>Daily Papers - Hugging Face</title>
+
+    <script
+      defer=""
+      data-domain="huggingface.co"
+      src="./huggingface-papers-raw_files/script.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="./huggingface-papers-raw_files/challenge.js"
+      defer=""
+    ></script>
+    <script
+      src="./huggingface-papers-raw_files/saved_resource"
+      async=""
+    ></script>
+    <script src="./huggingface-papers-raw_files/js" async=""></script>
+    <link
+      rel="modulepreload"
+      as="script"
+      crossorigin=""
+      href="https://huggingface.co/front/build/kube-5205e36/DailyPapersBannerSubscribe-c802da2e.js"
+    />
+    <link
+      rel="modulepreload"
+      as="script"
+      crossorigin=""
+      href="https://huggingface.co/front/build/kube-5205e36/IconCheckmarkFilled-c5227983.js"
+    />
+    <link
+      rel="modulepreload"
+      as="script"
+      crossorigin=""
+      href="https://huggingface.co/front/build/kube-5205e36/DailyPapers-b9444cc6.js"
+    />
+    <link
+      rel="modulepreload"
+      as="script"
+      crossorigin=""
+      href="https://huggingface.co/front/build/kube-5205e36/Contributors-0f8245e4.js"
+    />
+    <link
+      rel="modulepreload"
+      as="script"
+      crossorigin=""
+      href="https://huggingface.co/front/build/kube-5205e36/autoplay-4f99a53d.js"
+    />
+    <link
+      rel="modulepreload"
+      as="script"
+      crossorigin=""
+      href="https://huggingface.co/front/build/kube-5205e36/IconMessage-da02aa13.js"
+    />
+    <link
+      rel="modulepreload"
+      as="script"
+      crossorigin=""
+      href="https://huggingface.co/front/build/kube-5205e36/IconArrowLeft-1a18b7db.js"
+    />
+    <link
+      rel="modulepreload"
+      as="script"
+      crossorigin=""
+      href="https://huggingface.co/front/build/kube-5205e36/ModalBody-afe520de.js"
+    />
+    <link
+      rel="modulepreload"
+      as="script"
+      crossorigin=""
+      href="https://huggingface.co/front/build/kube-5205e36/urlWatcher-e4bd61b8.js"
+    />
+    <link
+      rel="modulepreload"
+      as="script"
+      crossorigin=""
+      href="https://huggingface.co/front/build/kube-5205e36/index-79e4fb58.js"
+    />
+    <link
+      rel="modulepreload"
+      as="script"
+      crossorigin=""
+      href="https://huggingface.co/front/build/kube-5205e36/IconSpinner-8217dc9e.js"
+    />
+    <link
+      rel="modulepreload"
+      as="script"
+      crossorigin=""
+      href="https://huggingface.co/front/build/kube-5205e36/UpvoteControl-e9565ab3.js"
+    />
+    <link
+      rel="modulepreload"
+      as="script"
+      crossorigin=""
+      href="https://huggingface.co/front/build/kube-5205e36/IconUpvoteFilled-23a87695.js"
+    />
+    <link
+      rel="modulepreload"
+      as="script"
+      crossorigin=""
+      href="https://huggingface.co/front/build/kube-5205e36/UsersListModal-bb863e0d.js"
+    />
+    <link
+      rel="modulepreload"
+      as="script"
+      crossorigin=""
+      href="https://huggingface.co/front/build/kube-5205e36/FollowButton-a418819d.js"
+    />
+    <link
+      rel="modulepreload"
+      as="script"
+      crossorigin=""
+      href="https://huggingface.co/front/build/kube-5205e36/index-e7672e3b.js"
+    />
+    <link
+      rel="modulepreload"
+      as="script"
+      crossorigin=""
+      href="https://huggingface.co/front/build/kube-5205e36/IconBellWatching-97041950.js"
+    />
+  </head>
+  <body
+    class="flex flex-col min-h-screen bg-white dark:bg-gray-950 text-black DailyPapersPage"
+  >
+    <div class="flex min-h-screen flex-col">
+      <div
+        class="SVELTE_HYDRATER contents"
+        data-props='{"classNames":"","isWide":false,"isZh":true}'
+        data-target="MainHeader"
+      >
+        <header class="border-b border-gray-100">
+          <div class="w-full px-4 container flex h-16 items-center">
+            <div class="flex flex-1 items-center">
+              <a
+                class="mr-5 flex flex-none items-center lg:mr-6"
+                href="https://huggingface.co/"
+                ><img
+                  alt="Hugging Face&#39;s logo"
+                  class="w-7 md:mr-2"
+                  src="./huggingface-papers-raw_files/huggingface_logo-noborder.svg"
+                />
+                <span
+                  class="hidden whitespace-nowrap text-lg font-bold md:block"
+                  >Hugging Face</span
+                ></a
+              >
+              <div class="relative flex-1 lg:max-w-sm mr-2 sm:mr-4 lg:mr-6">
+                <input
+                  autocomplete="off"
+                  class="w-full dark:bg-gray-950 pl-8 form-input-alt h-9 pr-3 focus:shadow-xl"
+                  name=""
+                  placeholder="Search models, datasets, users..."
+                  spellcheck="false"
+                  type="text"
+                />
+                <svg
+                  class="absolute left-2.5 text-gray-400 top-1/2 transform -translate-y-1/2"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  aria-hidden="true"
+                  focusable="false"
+                  role="img"
+                  width="1em"
+                  height="1em"
+                  preserveAspectRatio="xMidYMid meet"
+                  viewBox="0 0 32 32"
+                >
+                  <path
+                    d="M30 28.59L22.45 21A11 11 0 1 0 21 22.45L28.59 30zM5 14a9 9 0 1 1 9 9a9 9 0 0 1-9-9z"
+                    fill="currentColor"
+                  ></path>
+                </svg>
+              </div>
+              <div
+                class="flex flex-none items-center justify-center p-0.5 place-self-stretch lg:hidden"
+              >
+                <button
+                  class="relative z-40 flex h-6 w-8 items-center justify-center"
+                  type="button"
+                >
+                  <svg
+                    width="1em"
+                    height="1em"
+                    viewBox="0 0 10 10"
+                    class="text-xl"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    aria-hidden="true"
+                    focusable="false"
+                    role="img"
+                    preserveAspectRatio="xMidYMid meet"
+                    fill="currentColor"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M1.65039 2.9999C1.65039 2.8066 1.80709 2.6499 2.00039 2.6499H8.00039C8.19369 2.6499 8.35039 2.8066 8.35039 2.9999C8.35039 3.1932 8.19369 3.3499 8.00039 3.3499H2.00039C1.80709 3.3499 1.65039 3.1932 1.65039 2.9999ZM1.65039 4.9999C1.65039 4.8066 1.80709 4.6499 2.00039 4.6499H8.00039C8.19369 4.6499 8.35039 4.8066 8.35039 4.9999C8.35039 5.1932 8.19369 5.3499 8.00039 5.3499H2.00039C1.80709 5.3499 1.65039 5.1932 1.65039 4.9999ZM2.00039 6.6499C1.80709 6.6499 1.65039 6.8066 1.65039 6.9999C1.65039 7.1932 1.80709 7.3499 2.00039 7.3499H8.00039C8.19369 7.3499 8.35039 7.1932 8.35039 6.9999C8.35039 6.8066 8.19369 6.6499 8.00039 6.6499H2.00039Z"
+                    ></path>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <nav aria-label="Main" class="ml-auto hidden lg:block">
+              <ul class="flex items-center space-x-2">
+                <li>
+                  <a
+                    class="group flex items-center px-2 py-0.5 dark:hover:text-gray-400 hover:text-indigo-700"
+                    href="https://huggingface.co/models"
+                    ><svg
+                      class="mr-1.5 text-gray-400 group-hover:text-indigo-500"
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      aria-hidden="true"
+                      focusable="false"
+                      role="img"
+                      width="1em"
+                      height="1em"
+                      preserveAspectRatio="xMidYMid meet"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        class="uim-quaternary"
+                        d="M20.23 7.24L12 12L3.77 7.24a1.98 1.98 0 0 1 .7-.71L11 2.76c.62-.35 1.38-.35 2 0l6.53 3.77c.29.173.531.418.7.71z"
+                        opacity=".25"
+                        fill="currentColor"
+                      ></path>
+                      <path
+                        class="uim-tertiary"
+                        d="M12 12v9.5a2.09 2.09 0 0 1-.91-.21L4.5 17.48a2.003 2.003 0 0 1-1-1.73v-7.5a2.06 2.06 0 0 1 .27-1.01L12 12z"
+                        opacity=".5"
+                        fill="currentColor"
+                      ></path>
+                      <path
+                        class="uim-primary"
+                        d="M20.5 8.25v7.5a2.003 2.003 0 0 1-1 1.73l-6.62 3.82c-.275.13-.576.198-.88.2V12l8.23-4.76c.175.308.268.656.27 1.01z"
+                        fill="currentColor"
+                      ></path>
+                    </svg>
+                    Models</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="group flex items-center px-2 py-0.5 dark:hover:text-gray-400 hover:text-red-700"
+                    href="https://huggingface.co/datasets"
+                    ><svg
+                      class="mr-1.5 text-gray-400 group-hover:text-red-500"
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      aria-hidden="true"
+                      focusable="false"
+                      role="img"
+                      width="1em"
+                      height="1em"
+                      preserveAspectRatio="xMidYMid meet"
+                      viewBox="0 0 25 25"
+                    >
+                      <ellipse
+                        cx="12.5"
+                        cy="5"
+                        fill="currentColor"
+                        fill-opacity="0.25"
+                        rx="7.5"
+                        ry="2"
+                      ></ellipse>
+                      <path
+                        d="M12.5 15C16.6421 15 20 14.1046 20 13V20C20 21.1046 16.6421 22 12.5 22C8.35786 22 5 21.1046 5 20V13C5 14.1046 8.35786 15 12.5 15Z"
+                        fill="currentColor"
+                        opacity="0.5"
+                      ></path>
+                      <path
+                        d="M12.5 7C16.6421 7 20 6.10457 20 5V11.5C20 12.6046 16.6421 13.5 12.5 13.5C8.35786 13.5 5 12.6046 5 11.5V5C5 6.10457 8.35786 7 12.5 7Z"
+                        fill="currentColor"
+                        opacity="0.5"
+                      ></path>
+                      <path
+                        d="M5.23628 12C5.08204 12.1598 5 12.8273 5 13C5 14.1046 8.35786 15 12.5 15C16.6421 15 20 14.1046 20 13C20 12.8273 19.918 12.1598 19.7637 12C18.9311 12.8626 15.9947 13.5 12.5 13.5C9.0053 13.5 6.06886 12.8626 5.23628 12Z"
+                        fill="currentColor"
+                      ></path>
+                    </svg>
+                    Datasets</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="group flex items-center px-2 py-0.5 dark:hover:text-gray-400 hover:text-blue-700"
+                    href="https://huggingface.co/spaces"
+                    ><svg
+                      class="mr-1.5 text-gray-400 group-hover:text-blue-500"
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      aria-hidden="true"
+                      focusable="false"
+                      role="img"
+                      width="1em"
+                      height="1em"
+                      viewBox="0 0 25 25"
+                    >
+                      <path
+                        opacity=".5"
+                        d="M6.016 14.674v4.31h4.31v-4.31h-4.31ZM14.674 14.674v4.31h4.31v-4.31h-4.31ZM6.016 6.016v4.31h4.31v-4.31h-4.31Z"
+                        fill="currentColor"
+                      ></path>
+                      <path
+                        opacity=".75"
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M3 4.914C3 3.857 3.857 3 4.914 3h6.514c.884 0 1.628.6 1.848 1.414a5.171 5.171 0 0 1 7.31 7.31c.815.22 1.414.964 1.414 1.848v6.514A1.914 1.914 0 0 1 20.086 22H4.914A1.914 1.914 0 0 1 3 20.086V4.914Zm3.016 1.102v4.31h4.31v-4.31h-4.31Zm0 12.968v-4.31h4.31v4.31h-4.31Zm8.658 0v-4.31h4.31v4.31h-4.31Zm0-10.813a2.155 2.155 0 1 1 4.31 0 2.155 2.155 0 0 1-4.31 0Z"
+                        fill="currentColor"
+                      ></path>
+                      <path
+                        opacity=".25"
+                        d="M16.829 6.016a2.155 2.155 0 1 0 0 4.31 2.155 2.155 0 0 0 0-4.31Z"
+                        fill="currentColor"
+                      ></path>
+                    </svg>
+                    Spaces</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="group flex items-center px-2 py-0.5 dark:hover:text-gray-400 hover:text-yellow-700"
+                    href="https://huggingface.co/posts"
+                    ><svg
+                      class="mr-1.5 text-gray-400 group-hover:text-yellow-500 !text-yellow-500"
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      aria-hidden="true"
+                      focusable="false"
+                      role="img"
+                      width="1em"
+                      height="1em"
+                      viewBox="0 0 12 12"
+                      preserveAspectRatio="xMidYMid meet"
+                    >
+                      <path
+                        fill="currentColor"
+                        fill-rule="evenodd"
+                        d="M3.73 2.4A4.25 4.25 0 1 1 6 10.26H2.17l-.13-.02a.43.43 0 0 1-.3-.43l.01-.06a.43.43 0 0 1 .12-.22l.84-.84A4.26 4.26 0 0 1 3.73 2.4Z"
+                        clip-rule="evenodd"
+                      ></path>
+                    </svg>
+                    Posts</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="group flex items-center px-2 py-0.5 dark:hover:text-gray-400 hover:text-yellow-700"
+                    href="https://huggingface.co/docs"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      aria-hidden="true"
+                      role="img"
+                      class="mr-1.5 text-gray-400 group-hover:text-yellow-500"
+                      width="1em"
+                      height="1em"
+                      preserveAspectRatio="xMidYMid meet"
+                      viewBox="0 0 32 32"
+                    >
+                      <path
+                        opacity="0.5"
+                        d="M20.9022 5.10334L10.8012 10.8791L7.76318 9.11193C8.07741 8.56791 8.5256 8.11332 9.06512 7.7914L15.9336 3.73907C17.0868 3.08811 18.5002 3.26422 19.6534 3.91519L19.3859 3.73911C19.9253 4.06087 20.5879 4.56025 20.9022 5.10334Z"
+                        fill="currentColor"
+                      ></path>
+                      <path
+                        d="M10.7999 10.8792V28.5483C10.2136 28.5475 9.63494 28.4139 9.10745 28.1578C8.5429 27.8312 8.074 27.3621 7.74761 26.7975C7.42122 26.2327 7.24878 25.5923 7.24756 24.9402V10.9908C7.25062 10.3319 7.42358 9.68487 7.74973 9.1123L10.7999 10.8792Z"
+                        fill="currentColor"
+                        fill-opacity="0.75"
+                      ></path>
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M21.3368 10.8499V6.918C21.3331 6.25959 21.16 5.61234 20.8346 5.03949L10.7971 10.8727L10.8046 10.874L21.3368 10.8499Z"
+                        fill="currentColor"
+                      ></path>
+                      <path
+                        opacity="0.5"
+                        d="M21.7937 10.8488L10.7825 10.8741V28.5486L21.7937 28.5234C23.3344 28.5234 24.5835 27.2743 24.5835 25.7335V13.6387C24.5835 12.0979 23.4365 11.1233 21.7937 10.8488Z"
+                        fill="currentColor"
+                      ></path>
+                    </svg>
+                    Docs</a
+                  >
+                </li>
+                <li class="max-2xl:hidden">
+                  <div class="relative">
+                    <button
+                      class="px-2 py-0.5 group hover:text-green-700 dark:hover:text-gray-400 flex items-center"
+                      type="button"
+                    >
+                      <svg
+                        class="mr-1.5 text-gray-400 group-hover:text-green-500"
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        aria-hidden="true"
+                        focusable="false"
+                        role="img"
+                        width="1em"
+                        height="1em"
+                        preserveAspectRatio="xMidYMid meet"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          class="uim-tertiary"
+                          d="M19 6H5a3 3 0 0 0-3 3v2.72L8.837 14h6.326L22 11.72V9a3 3 0 0 0-3-3z"
+                          opacity=".5"
+                          fill="currentColor"
+                        ></path>
+                        <path
+                          class="uim-primary"
+                          d="M10 6V5h4v1h2V5a2.002 2.002 0 0 0-2-2h-4a2.002 2.002 0 0 0-2 2v1h2zm-1.163 8L2 11.72V18a3.003 3.003 0 0 0 3 3h14a3.003 3.003 0 0 0 3-3v-6.28L15.163 14H8.837z"
+                          fill="currentColor"
+                        ></path>
+                      </svg>
+                      Solutions
+                    </button>
+                  </div>
+                </li>
+                <li>
+                  <a
+                    class="group flex items-center px-2 py-0.5 hover:text-gray-500 dark:hover:text-gray-400"
+                    href="https://huggingface.co/pricing"
+                    >Pricing</a
+                  >
+                </li>
+                <li>
+                  <div class="relative group">
+                    <button
+                      class="px-2 py-0.5 hover:text-gray-500 dark:hover:text-gray-600 flex items-center"
+                      type="button"
+                    >
+                      <svg
+                        class="mr-1.5 text-gray-500 w-5 group-hover:text-gray-400 dark:text-gray-300 dark:group-hover:text-gray-400"
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        aria-hidden="true"
+                        focusable="false"
+                        role="img"
+                        width="1em"
+                        height="1em"
+                        viewBox="0 0 32 18"
+                        preserveAspectRatio="xMidYMid meet"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M14.4504 3.30221C14.4504 2.836 14.8284 2.45807 15.2946 2.45807H28.4933C28.9595 2.45807 29.3374 2.836 29.3374 3.30221C29.3374 3.76842 28.9595 4.14635 28.4933 4.14635H15.2946C14.8284 4.14635 14.4504 3.76842 14.4504 3.30221Z"
+                          fill="currentColor"
+                        ></path>
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M14.4504 9.00002C14.4504 8.53382 14.8284 8.15588 15.2946 8.15588H28.4933C28.9595 8.15588 29.3374 8.53382 29.3374 9.00002C29.3374 9.46623 28.9595 9.84417 28.4933 9.84417H15.2946C14.8284 9.84417 14.4504 9.46623 14.4504 9.00002Z"
+                          fill="currentColor"
+                        ></path>
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M14.4504 14.6978C14.4504 14.2316 14.8284 13.8537 15.2946 13.8537H28.4933C28.9595 13.8537 29.3374 14.2316 29.3374 14.6978C29.3374 15.164 28.9595 15.542 28.4933 15.542H15.2946C14.8284 15.542 14.4504 15.164 14.4504 14.6978Z"
+                          fill="currentColor"
+                        ></path>
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M1.94549 6.87377C2.27514 6.54411 2.80962 6.54411 3.13928 6.87377L6.23458 9.96907L9.32988 6.87377C9.65954 6.54411 10.194 6.54411 10.5237 6.87377C10.8533 7.20343 10.8533 7.73791 10.5237 8.06756L6.23458 12.3567L1.94549 8.06756C1.61583 7.73791 1.61583 7.20343 1.94549 6.87377Z"
+                          fill="currentColor"
+                        ></path>
+                      </svg>
+                    </button>
+                  </div>
+                </li>
+                <li>
+                  <hr
+                    class="h-5 w-0.5 border-none bg-gray-100 dark:bg-gray-800"
+                  />
+                </li>
+                <li>
+                  <a
+                    class="block cursor-pointer px-2 py-0.5 hover:text-gray-500 dark:hover:text-gray-400"
+                    href="https://huggingface.co/login"
+                    >Log In</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="rounded-full border border-transparent bg-gray-900 px-3 py-1 leading-none text-white hover:border-black hover:bg-white hover:text-black"
+                    href="https://huggingface.co/join"
+                    >Sign Up</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </header>
+      </div>
+
+      <div
+        class="SVELTE_HYDRATER contents"
+        data-props="{}"
+        data-target="GoogleAnalyticsTracker"
+      ></div>
+
+      <div
+        class="SVELTE_HYDRATER contents"
+        data-props="{}"
+        data-target="SSOBanner"
+      ></div>
+
+      <main class="flex flex-1 flex-col">
+        <div
+          class="SVELTE_HYDRATER contents"
+          data-props='{"isLoggedIn":false}'
+          data-target="DailyPapersBannerSubscribe"
+        >
+          <div class="-mt-px flex h-9 w-full justify-center text-gray-600">
+            <svg
+              class="hidden h-9 flex-none text-gray-100/80 sm:block dark:text-gray-800/40"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 110 41"
+            >
+              <path
+                fill="currentColor"
+                d="M110 0H0c39.1 0 44 9.6 49 19.5C54.6 30 60 41 108 41h2V0Z"
+              ></path>
+            </svg>
+            <div
+              class="flex items-center justify-center gap-3 bg-gray-100/80 text-sm max-sm:flex-1 dark:bg-gray-800/40"
+            >
+              <div
+                class="rounded-md bg-blue-500/20 px-1 text-xs font-semibold uppercase text-blue-600"
+              >
+                new
+              </div>
+              <p class="hidden sm:inline">
+                Get trending papers in your email inbox once a day!
+              </p>
+              <p class="inline sm:hidden">
+                Get trending papers in your email inbox!
+              </p>
+              <a
+                href="https://huggingface.co/login?next=%2Fpapers"
+                class="btn !px-2 text-sm leading-none"
+                >Subscribe</a
+              >
+            </div>
+            <svg
+              class="hidden h-9 flex-none text-gray-100/80 sm:block dark:text-gray-800/40"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 110 41"
+            >
+              <path
+                fill="currentColor"
+                d="M0 0h110C70.9 0 66 9.6 61 19.5 55.4 30 50 41 2 41H0V0Z"
+              ></path>
+            </svg>
+          </div>
+        </div>
+        <div
+          class="SVELTE_HYDRATER contents"
+          data-props='{"date":"2024-01-19T03:27:18.264Z","dailyPapers":[{"paper":{"id":"2401.10020","authors":[{"_id":"65a9da1af2878c013d172f3c","name":"Weizhe Yuan","hidden":false},{"_id":"65a9da1af2878c013d172f3d","name":"Richard Yuanzhe Pang","hidden":false},{"_id":"65a9da1af2878c013d172f3e","name":"Kyunghyun Cho","hidden":false},{"_id":"65a9da1af2878c013d172f3f","name":"Sainbayar Sukhbaatar","hidden":false},{"_id":"65a9da1af2878c013d172f40","name":"Jing Xu","hidden":false},{"_id":"65a9da1af2878c013d172f41","name":"Jason Weston","hidden":false}],"publishedAt":"2024-01-18T14:43:47.000Z","title":"Self-Rewarding Language Models","summary":"We posit that to achieve superhuman agents, future models require superhuman\nfeedback in order to provide an adequate training signal. Current approaches\ncommonly train reward models from human preferences, which may then be\nbottlenecked by human performance level, and secondly these separate frozen\nreward models cannot then learn to improve during LLM training. In this work,\nwe study Self-Rewarding Language Models, where the language model itself is\nused via LLM-as-a-Judge prompting to provide its own rewards during training.\nWe show that during Iterative DPO training that not only does instruction\nfollowing ability improve, but also the ability to provide high-quality rewards\nto itself. Fine-tuning Llama 2 70B on three iterations of our approach yields a\nmodel that outperforms many existing systems on the AlpacaEval 2.0 leaderboard,\nincluding Claude 2, Gemini Pro, and GPT-4 0613. While only a preliminary study,\nthis work opens the door to the possibility of models that can continually\nimprove in both axes.","upvotes":6},"publishedAt":"2024-01-19T02:10:35.017Z","title":"Self-Rewarding Language Models","mediaUrl":"https://cdn-uploads.huggingface.co/production/uploads/60f1abe7544c2adfd699860c/GvhF-FArhZFDSQJirlPSv.png","numComments":0,"upvoted":false},{"paper":{"id":"2401.09985","authors":[{"_id":"65a9d8ec848a78d4da076152","name":"Xiaofeng Wang","hidden":false},{"_id":"65a9d8ec848a78d4da076153","user":{"avatarUrl":"/avatars/bcca51bdc27c664f8f132420e6ed99fa.svg","isPro":false,"fullname":"Zheng Zhu","user":"ZhengZhu","type":"user"},"name":"Zheng Zhu","status":"extracted_pending","statusLastChangedAt":"2024-01-19T02:05:33.694Z","hidden":false},{"_id":"65a9d8ec848a78d4da076154","name":"Guan Huang","hidden":false},{"_id":"65a9d8ec848a78d4da076155","name":"Boyuan Wang","hidden":false},{"_id":"65a9d8ec848a78d4da076156","name":"Xinze Chen","hidden":false},{"_id":"65a9d8ec848a78d4da076157","name":"Jiwen Lu","hidden":false}],"publishedAt":"2024-01-18T14:01:20.000Z","title":"WorldDreamer: Towards General World Models for Video Generation via\n  Predicting Masked Tokens","summary":"World models play a crucial role in understanding and predicting the dynamics\nof the world, which is essential for video generation. However, existing world\nmodels are confined to specific scenarios such as gaming or driving, limiting\ntheir ability to capture the complexity of general world dynamic environments.\nTherefore, we introduce WorldDreamer, a pioneering world model to foster a\ncomprehensive comprehension of general world physics and motions, which\nsignificantly enhances the capabilities of video generation. Drawing\ninspiration from the success of large language models, WorldDreamer frames\nworld modeling as an unsupervised visual sequence modeling challenge. This is\nachieved by mapping visual inputs to discrete tokens and predicting the masked\nones. During this process, we incorporate multi-modal prompts to facilitate\ninteraction within the world model. Our experiments show that WorldDreamer\nexcels in generating videos across different scenarios, including natural\nscenes and driving environments. WorldDreamer showcases versatility in\nexecuting tasks such as text-to-video conversion, image-tovideo synthesis, and\nvideo editing. These results underscore WorldDreamer&#39;s effectiveness in\ncapturing dynamic elements within diverse general world environments.","upvotes":2},"publishedAt":"2024-01-19T02:05:33.714Z","title":"WorldDreamer: Towards General World Models for Video Generation via Predicting Masked Tokens","mediaUrl":"https://cdn-uploads.huggingface.co/production/uploads/60f1abe7544c2adfd699860c/R3qk6IqP6WI_X4W9_ykJA.png","numComments":0,"upvoted":false},{"paper":{"id":"2401.10061","authors":[{"_id":"65a9e21dd766c6c6409f33eb","name":"Jie Qin","hidden":false},{"_id":"65a9e21dd766c6c6409f33ec","name":"Jie Wu","hidden":false},{"_id":"65a9e21dd766c6c6409f33ed","name":"Weifeng Chen","hidden":false},{"_id":"65a9e21dd766c6c6409f33ee","name":"Yuxi Ren","hidden":false},{"_id":"65a9e21dd766c6c6409f33ef","name":"Huixia Li","hidden":false},{"_id":"65a9e21dd766c6c6409f33f0","name":"Hefeng Wu","hidden":false},{"_id":"65a9e21dd766c6c6409f33f1","name":"Xuefeng Xiao","hidden":false},{"_id":"65a9e21dd766c6c6409f33f2","name":"Rui Wang","hidden":false},{"_id":"65a9e21dd766c6c6409f33f3","name":"Shilei Wen","hidden":false}],"publishedAt":"2024-01-18T15:30:58.000Z","title":"DiffusionGPT: LLM-Driven Text-to-Image Generation System","summary":"Diffusion models have opened up new avenues for the field of image\ngeneration, resulting in the proliferation of high-quality models shared on\nopen-source platforms. However, a major challenge persists in current\ntext-to-image systems are often unable to handle diverse inputs, or are limited\nto single model results. Current unified attempts often fall into two\northogonal aspects: i) parse Diverse Prompts in input stage; ii) activate\nexpert model to output. To combine the best of both worlds, we propose\nDiffusionGPT, which leverages Large Language Models (LLM) to offer a unified\ngeneration system capable of seamlessly accommodating various types of prompts\nand integrating domain-expert models. DiffusionGPT constructs domain-specific\nTrees for various generative models based on prior knowledge. When provided\nwith an input, the LLM parses the prompt and employs the Trees-of-Thought to\nguide the selection of an appropriate model, thereby relaxing input constraints\nand ensuring exceptional performance across diverse domains. Moreover, we\nintroduce Advantage Databases, where the Tree-of-Thought is enriched with human\nfeedback, aligning the model selection process with human preferences. Through\nextensive experiments and comparisons, we demonstrate the effectiveness of\nDiffusionGPT, showcasing its potential for pushing the boundaries of image\nsynthesis in diverse domains.","upvotes":1},"publishedAt":"2024-01-19T02:44:47.534Z","title":"DiffusionGPT: LLM-Driven Text-to-Image Generation System","mediaUrl":"https://cdn-uploads.huggingface.co/production/uploads/60f1abe7544c2adfd699860c/S7274X86qLOt_miW5W9qL.png","numComments":0,"upvoted":false},{"paper":{"id":"2401.09865","authors":[{"_id":"65a9e02ae15948f4c6b25dc7","name":"Ioana Bica","hidden":false},{"_id":"65a9e02ae15948f4c6b25dc8","name":"Anastasija Ilić","hidden":false},{"_id":"65a9e02ae15948f4c6b25dc9","name":"Matthias Bauer","hidden":false},{"_id":"65a9e02ae15948f4c6b25dca","name":"Goker Erdogan","hidden":false},{"_id":"65a9e02ae15948f4c6b25dcb","name":"Matko Bošnjak","hidden":false},{"_id":"65a9e02ae15948f4c6b25dcc","name":"Christos Kaplanis","hidden":false},{"_id":"65a9e02ae15948f4c6b25dcd","name":"Alexey A. Gritsenko","hidden":false},{"_id":"65a9e02ae15948f4c6b25dce","name":"Matthias Minderer","hidden":false},{"_id":"65a9e02ae15948f4c6b25dcf","name":"Charles Blundell","hidden":false},{"_id":"65a9e02ae15948f4c6b25dd0","name":"Razvan Pascanu","hidden":false},{"_id":"65a9e02ae15948f4c6b25dd1","name":"Jovana Mitrović","hidden":false}],"publishedAt":"2024-01-18T10:28:45.000Z","title":"Improving fine-grained understanding in image-text pre-training","summary":"We introduce SPARse Fine-grained Contrastive Alignment (SPARC), a simple\nmethod for pretraining more fine-grained multimodal representations from\nimage-text pairs. Given that multiple image patches often correspond to single\nwords, we propose to learn a grouping of image patches for every token in the\ncaption. To achieve this, we use a sparse similarity metric between image\npatches and language tokens and compute for each token a language-grouped\nvision embedding as the weighted average of patches. The token and\nlanguage-grouped vision embeddings are then contrasted through a fine-grained\nsequence-wise loss that only depends on individual samples and does not require\nother batch samples as negatives. This enables more detailed information to be\nlearned in a computationally inexpensive manner. SPARC combines this\nfine-grained loss with a contrastive loss between global image and text\nembeddings to learn representations that simultaneously encode global and local\ninformation. We thoroughly evaluate our proposed method and show improved\nperformance over competing approaches both on image-level tasks relying on\ncoarse-grained information, e.g. classification, as well as region-level tasks\nrelying on fine-grained information, e.g. retrieval, object detection, and\nsegmentation. Moreover, SPARC improves model faithfulness and captioning in\nfoundational vision-language models.","upvotes":1},"publishedAt":"2024-01-19T02:36:27.561Z","title":"Improving fine-grained understanding in image-text pre-training","mediaUrl":"https://cdn-uploads.huggingface.co/production/uploads/60f1abe7544c2adfd699860c/S6rsTD3mFqV4MVXbH3YUK.png","numComments":0,"upvoted":false},{"paper":{"id":"2401.10225","authors":[{"_id":"65a9dc6e2ed95c799fe0279d","name":"Zihan Liu","hidden":false},{"_id":"65a9dc6e2ed95c799fe0279e","name":"Wei Ping","hidden":false},{"_id":"65a9dc6e2ed95c799fe0279f","name":"Rajarshi Roy","hidden":false},{"_id":"65a9dc6e2ed95c799fe027a0","name":"Peng Xu","hidden":false},{"_id":"65a9dc6e2ed95c799fe027a1","name":"Mohammad Shoeybi","hidden":false},{"_id":"65a9dc6e2ed95c799fe027a2","name":"Bryan Catanzaro","hidden":false}],"publishedAt":"2024-01-18T18:59:11.000Z","title":"ChatQA: Building GPT-4 Level Conversational QA Models","summary":"In this work, we introduce ChatQA, a family of conversational question\nanswering (QA) models, that obtain GPT-4 level accuracies. Specifically, we\npropose a two-stage instruction tuning method that can significantly improve\nthe zero-shot conversational QA results from large language models (LLMs). To\nhandle retrieval in conversational QA, we fine-tune a dense retriever on a\nmulti-turn QA dataset, which provides comparable results to using the\nstate-of-the-art query rewriting model while largely reducing deployment cost.\nNotably, our ChatQA-70B can outperform GPT-4 in terms of average score on 10\nconversational QA datasets (54.14 vs. 53.90), without relying on any synthetic\ndata from OpenAI GPT models.","upvotes":1},"publishedAt":"2024-01-19T02:20:30.875Z","title":"ChatQA: Building GPT-4 Level Conversational QA Models","mediaUrl":"https://cdn-uploads.huggingface.co/production/uploads/60f1abe7544c2adfd699860c/UkABNPp5_cGu24Z_PYrnA.png","numComments":0,"upvoted":false},{"paper":{"id":"2401.10166","authors":[{"_id":"65a9eb69cab1bfcc3afb8ff1","name":"Yue Liu","hidden":false},{"_id":"65a9eb69cab1bfcc3afb8ff2","name":"Yunjie Tian","hidden":false},{"_id":"65a9eb69cab1bfcc3afb8ff3","name":"Yuzhong Zhao","hidden":false},{"_id":"65a9eb69cab1bfcc3afb8ff4","name":"Hongtian Yu","hidden":false},{"_id":"65a9eb69cab1bfcc3afb8ff5","name":"Lingxi Xie","hidden":false},{"_id":"65a9eb69cab1bfcc3afb8ff6","name":"Yaowei Wang","hidden":false},{"_id":"65a9eb69cab1bfcc3afb8ff7","name":"Qixiang Ye","hidden":false},{"_id":"65a9eb69cab1bfcc3afb8ff8","name":"Yunfan Liu","hidden":false}],"publishedAt":"2024-01-18T17:55:39.000Z","title":"VMamba: Visual State Space Model","summary":"Convolutional Neural Networks (CNNs) and Vision Transformers (ViTs) stand as\nthe two most popular foundation models for visual representation learning.\nWhile CNNs exhibit remarkable scalability with linear complexity w.r.t. image\nresolution, ViTs surpass them in fitting capabilities despite contending with\nquadratic complexity. A closer inspection reveals that ViTs achieve superior\nvisual modeling performance through the incorporation of global receptive\nfields and dynamic weights. This observation motivates us to propose a novel\narchitecture that inherits these components while enhancing computational\nefficiency. To this end, we draw inspiration from the recently introduced state\nspace model and propose the Visual State Space Model (VMamba), which achieves\nlinear complexity without sacrificing global receptive fields. To address the\nencountered direction-sensitive issue, we introduce the Cross-Scan Module (CSM)\nto traverse the spatial domain and convert any non-causal visual image into\norder patch sequences. Extensive experimental results substantiate that VMamba\nnot only demonstrates promising capabilities across various visual perception\ntasks, but also exhibits more pronounced advantages over established benchmarks\nas the image resolution increases. Source code has been available at\nhttps://github.com/MzeroMiko/VMamba.","upvotes":0},"publishedAt":"2024-01-19T03:24:26.255Z","title":"VMamba: Visual State Space Model","mediaUrl":"https://cdn-uploads.huggingface.co/production/uploads/60f1abe7544c2adfd699860c/MMWId1L6muy8vFuad1NO2.png","numComments":0,"upvoted":false},{"paper":{"id":"2401.10032","authors":[{"_id":"65a9e92668139e3c423d0fc2","name":"Tan Dat Nguyen","hidden":false},{"_id":"65a9e92668139e3c423d0fc3","name":"Ji-Hoon Kim","hidden":false},{"_id":"65a9e92668139e3c423d0fc4","name":"Youngjoon Jang","hidden":false},{"_id":"65a9e92668139e3c423d0fc5","name":"Jaehun Kim","hidden":false},{"_id":"65a9e92668139e3c423d0fc6","name":"Joon Son Chung","hidden":false}],"publishedAt":"2024-01-18T14:57:25.000Z","title":"FreGrad: Lightweight and Fast Frequency-aware Diffusion Vocoder","summary":"The goal of this paper is to generate realistic audio with a lightweight and\nfast diffusion-based vocoder, named FreGrad. Our framework consists of the\nfollowing three key components: (1) We employ discrete wavelet transform that\ndecomposes a complicated waveform into sub-band wavelets, which helps FreGrad\nto operate on a simple and concise feature space, (2) We design a\nfrequency-aware dilated convolution that elevates frequency awareness,\nresulting in generating speech with accurate frequency information, and (3) We\nintroduce a bag of tricks that boosts the generation quality of the proposed\nmodel. In our experiments, FreGrad achieves 3.7 times faster training time and\n2.2 times faster inference speed compared to our baseline while reducing the\nmodel size by 0.6 times (only 1.78M parameters) without sacrificing the output\nquality. Audio samples are available at:\nhttps://mm.kaist.ac.kr/projects/FreGrad.","upvotes":0},"publishedAt":"2024-01-19T03:14:46.992Z","title":"FreGrad: Lightweight and Fast Frequency-aware Diffusion Vocoder","mediaUrl":"https://cdn-uploads.huggingface.co/production/uploads/60f1abe7544c2adfd699860c/BE4b_4cz9zQl5idby3k_B.png","numComments":0,"upvoted":false},{"paper":{"id":"2401.09962","authors":[{"_id":"65a9e778d63812c33ed6218c","name":"Zhao Wang","hidden":false},{"_id":"65a9e778d63812c33ed6218d","name":"Aoxue Li","hidden":false},{"_id":"65a9e778d63812c33ed6218e","name":"Enze Xie","hidden":false},{"_id":"65a9e778d63812c33ed6218f","name":"Lingting Zhu","hidden":false},{"_id":"65a9e778d63812c33ed62190","name":"Yong Guo","hidden":false},{"_id":"65a9e778d63812c33ed62191","name":"Qi Dou","hidden":false},{"_id":"65a9e778d63812c33ed62192","name":"Zhenguo Li","hidden":false}],"publishedAt":"2024-01-18T13:23:51.000Z","title":"CustomVideo: Customizing Text-to-Video Generation with Multiple Subjects","summary":"Customized text-to-video generation aims to generate high-quality videos\nguided by text prompts and subject references. Current approaches designed for\nsingle subjects suffer from tackling multiple subjects, which is a more\nchallenging and practical scenario. In this work, we aim to promote\nmulti-subject guided text-to-video customization. We propose CustomVideo, a\nnovel framework that can generate identity-preserving videos with the guidance\nof multiple subjects. To be specific, firstly, we encourage the co-occurrence\nof multiple subjects via composing them in a single image. Further, upon a\nbasic text-to-video diffusion model, we design a simple yet effective attention\ncontrol strategy to disentangle different subjects in the latent space of\ndiffusion model. Moreover, to help the model focus on the specific object area,\nwe segment the object from given reference images and provide a corresponding\nobject mask for attention learning. Also, we collect a multi-subject\ntext-to-video generation dataset as a comprehensive benchmark, with 69\nindividual subjects and 57 meaningful pairs. Extensive qualitative,\nquantitative, and user study results demonstrate the superiority of our method,\ncompared with the previous state-of-the-art approaches.","upvotes":0},"publishedAt":"2024-01-19T03:07:37.894Z","title":"CustomVideo: Customizing Text-to-Video Generation with Multiple Subjects","mediaUrl":"https://cdn-uploads.huggingface.co/production/uploads/60f1abe7544c2adfd699860c/GFvdOMUcvcL_cSHtfo0BG.mp4","numComments":0,"upvoted":false},{"paper":{"id":"2401.09603","authors":[{"_id":"65a9e617e0ee7990a6ed4e3c","name":"Sadeep Jayasumana","hidden":false},{"_id":"65a9e617e0ee7990a6ed4e3d","name":"Srikumar Ramalingam","hidden":false},{"_id":"65a9e617e0ee7990a6ed4e3e","name":"Andreas Veit","hidden":false},{"_id":"65a9e617e0ee7990a6ed4e3f","name":"Daniel Glasner","hidden":false},{"_id":"65a9e617e0ee7990a6ed4e40","name":"Ayan Chakrabarti","hidden":false},{"_id":"65a9e617e0ee7990a6ed4e41","name":"Sanjiv Kumar","hidden":false}],"publishedAt":"2023-11-30T19:11:01.000Z","title":"Rethinking FID: Towards a Better Evaluation Metric for Image Generation","summary":"As with many machine learning problems, the progress of image generation\nmethods hinges on good evaluation metrics. One of the most popular is the\nFrechet Inception Distance (FID). FID estimates the distance between a\ndistribution of Inception-v3 features of real images, and those of images\ngenerated by the algorithm. We highlight important drawbacks of FID:\nInception&#39;s poor representation of the rich and varied content generated by\nmodern text-to-image models, incorrect normality assumptions, and poor sample\ncomplexity. We call for a reevaluation of FID&#39;s use as the primary quality\nmetric for generated images. We empirically demonstrate that FID contradicts\nhuman raters, it does not reflect gradual improvement of iterative\ntext-to-image models, it does not capture distortion levels, and that it\nproduces inconsistent results when varying the sample size. We also propose an\nalternative new metric, CMMD, based on richer CLIP embeddings and the maximum\nmean discrepancy distance with the Gaussian RBF kernel. It is an unbiased\nestimator that does not make any assumptions on the probability distribution of\nthe embeddings and is sample efficient. Through extensive experiments and\nanalysis, we demonstrate that FID-based evaluations of text-to-image models may\nbe unreliable, and that CMMD offers a more robust and reliable assessment of\nimage quality.","upvotes":0},"publishedAt":"2024-01-19T03:01:44.476Z","title":"Rethinking FID: Towards a Better Evaluation Metric for Image Generation","mediaUrl":"https://cdn-uploads.huggingface.co/production/uploads/60f1abe7544c2adfd699860c/Ik64AlizVmcMBdGMZpzk8.png","numComments":0,"upvoted":false}],"lastDate":"2024-01-19T03:24:26.255Z","prevDate":"2024-01-18","publisher":{"avatarUrl":"https://aeiljuispo.cloudimg.io/v7/https://cdn-uploads.huggingface.co/production/uploads/1674929746905-60f1abe7544c2adfd699860c.jpeg?w=200&amp;h=200&amp;f=face","isPro":false,"fullname":"AK","user":"akhaliq","type":"user"}}'
+          data-target="DailyPapers"
+        >
+          <section class="container relative mb-20 mt-8 md:mt-14">
+            <div
+              class="mb-12 grid grid-cols-2 items-start md:mb-16 md:grid-cols-3"
+            >
+              <div class="md:pl-4">
+                <h1 class="text-2xl font-bold md:text-3xl">
+                  <a
+                    href="https://huggingface.co/papers"
+                    class="hover:text-gray-600 dark:hover:text-gray-300"
+                    >Daily Papers</a
+                  >
+                </h1>
+                <div class="flex flex-wrap items-center gap-2 text-gray-500">
+                  <h2 class="flex items-center gap-2.5 text-xl">
+                    by
+                    <a
+                      href="https://huggingface.co/akhaliq"
+                      class="flex items-center gap-2"
+                      ><img
+                        alt=""
+                        class="h-4 w-4 rounded-full ring-2 ring-white dark:ring-gray-900"
+                        src="./huggingface-papers-raw_files/1674929746905-60f1abe7544c2adfd699860c.jpeg"
+                      /><span class="underline">AK</span></a
+                    >
+                  </h2>
+                </div>
+              </div>
+              <div
+                class="order-last col-span-2 mt-6 md:order-none md:col-span-1 md:mt-0"
+              >
+                <button
+                  class="mx-auto flex w-full translate-y-1 items-center justify-center rounded-full border py-1 text-gray-400 shadow-sm hover:shadow-inner md:w-80"
+                  title="Search papers"
+                >
+                  <svg
+                    class="mr-2"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    aria-hidden="true"
+                    focusable="false"
+                    role="img"
+                    width="1em"
+                    height="1em"
+                    preserveAspectRatio="xMidYMid meet"
+                    viewBox="0 0 32 32"
+                  >
+                    <path
+                      d="M30 28.59L22.45 21A11 11 0 1 0 21 22.45L28.59 30zM5 14a9 9 0 1 1 9 9a9 9 0 0 1-9-9z"
+                      fill="currentColor"
+                    ></path>
+                  </svg>
+                  Search by arxiv id or title
+                </button>
+              </div>
+              <div class="flex items-stretch justify-end">
+                <a
+                  href="https://huggingface.co/papers?date=2024-01-18"
+                  class="group my-0.5 -mr-2 flex w-8 items-center justify-center rounded-l-lg border border-gray-100 hover:bg-gray-50 dark:hover:bg-gray-900"
+                  ><svg
+                    class="text-gray-600 dark:text-gray-400 -translate-x-0.5 h-2.5 group-hover:dark:text-gray-200 group-hover:text-gray-800"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    aria-hidden="true"
+                    fill="currentColor"
+                    focusable="false"
+                    role="img"
+                    width="1em"
+                    height="1em"
+                    preserveAspectRatio="xMidYMid meet"
+                    viewBox="0 0 10 10"
+                  >
+                    <path
+                      d="M-2.30478e-07 4.95458L7.90909 0.388266L7.90909 9.5209L-2.30478e-07 4.95458Z"
+                      fill="currentColor"
+                    ></path></svg
+                ></a>
+                <time
+                  class="relative flex flex-col items-stretch"
+                  datetime="2024-01-19T03:27:18.264Z"
+                  ><span
+                    class="rounded-t-lg bg-gray-500 px-3.5 py-0.5 text-center text-xs font-bold uppercase leading-none text-white dark:bg-gray-700"
+                    >Jan</span
+                  >
+                  <span
+                    class="rounded-b-lg bg-gray-100 px-3.5 py-1 text-center text-xl font-semibold text-gray-800 dark:bg-gradient-to-br dark:from-gray-800 dark:to-gray-950"
+                    >19</span
+                  ></time
+                >
+                <a
+                  class="group my-0.5 -ml-2 flex w-8 items-center justify-center rounded-r-lg border border-gray-100 hover:bg-gray-50 dark:hover:bg-gray-900 invisible"
+                  ><svg
+                    class="text-gray-600 dark:text-gray-400 rotate-180 translate-x-0.5 h-2.5 group-hover:dark:text-gray-200 group-hover:text-gray-800"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    aria-hidden="true"
+                    fill="currentColor"
+                    focusable="false"
+                    role="img"
+                    width="1em"
+                    height="1em"
+                    preserveAspectRatio="xMidYMid meet"
+                    viewBox="0 0 10 10"
+                  >
+                    <path
+                      d="M-2.30478e-07 4.95458L7.90909 0.388266L7.90909 9.5209L-2.30478e-07 4.95458Z"
+                      fill="currentColor"
+                    ></path></svg
+                ></a>
+              </div>
+            </div>
+            <div class="relative grid grid-cols-1 gap-14 lg:grid-cols-2">
+              <div>
+                <article
+                  class="flex flex-col overflow-hidden rounded-xl border"
+                >
+                  <a
+                    href="https://huggingface.co/papers/2401.10020"
+                    class="shadow-alternate-sm peer relative block h-56 w-full cursor-pointer overflow-hidden rounded-xl border bg-white sm:h-64 md:h-72 lg:h-80 dark:border-gray-700"
+                    ><img
+                      src="./huggingface-papers-raw_files/GvhF-FArhZFDSQJirlPSv.png"
+                      alt=""
+                      class="h-full w-full object-cover object-top opacity-80 dark:opacity-70 dark:invert"
+                  /></a>
+                  <div
+                    class="from-gray-50-to-white -mt-2 flex bg-gradient-to-b px-6 pb-6 pt-8"
+                  >
+                    <div class="flex w-full gap-6">
+                      <div class="flex flex-wrap items-center gap-2.5 pt-1">
+                        <a
+                          href="https://huggingface.co/login?next=%2Fpapers%2F2401.10020"
+                          class="self-start"
+                        >
+                          <div
+                            class="shadow-alternate flex h-14 w-12 gap-1 rounded-xl flex-none cursor-pointer select-none flex-col items-center justify-center self-start border-gray-300 bg-white dark:bg-gray-850"
+                          >
+                            <input
+                              type="checkbox"
+                              class="peer hidden"
+                              disabled=""
+                            />
+                            <svg
+                              class="text-sm peer-checked:text-gray-500 group-hover:text-gray-500"
+                              xmlns="http://www.w3.org/2000/svg"
+                              xmlns:xlink="http://www.w3.org/1999/xlink"
+                              aria-hidden="true"
+                              role="img"
+                              width="1em"
+                              height="1em"
+                              preserveAspectRatio="xMidYMid meet"
+                              viewBox="0 0 12 12"
+                            >
+                              <path
+                                fill="currentColor"
+                                d="M5.19 2.67a.94.94 0 0 1 1.62 0l3.31 5.72a.94.94 0 0 1-.82 1.4H2.7a.94.94 0 0 1-.82-1.4l3.31-5.7v-.02Z"
+                              ></path>
+                            </svg>
+                            <div class="leading-none">6</div>
+                          </div></a
+                        >
+                      </div>
+                      <div class="w-full">
+                        <h3
+                          class="mb-1 text-lg font-semibold leading-[1.2] hover:underline peer-hover:underline md:text-2xl"
+                        >
+                          <a
+                            href="https://huggingface.co/papers/2401.10020"
+                            class="cursor-pointer"
+                            >Self-Rewarding Language Models</a
+                          >
+                        </h3>
+                        <div class="flex items-center justify-between">
+                          <a
+                            href="https://huggingface.co/papers/2401.10020"
+                            class="flex"
+                            ><ul
+                              class="flex items-center flex-row-reverse text-sm"
+                            >
+                              <li
+                                class="-mr-2 h-4 w-4 md:h-5 md:w-5 block flex-none rounded-full border-2 border-white bg-gradient-to-br from-gray-300 to-gray-100 dark:border-gray-900 dark:from-gray-600 dark:to-gray-800"
+                                title="Jing Xu"
+                                style="content-visibility: auto"
+                              ></li>
+                              <li
+                                class="-mr-2 h-4 w-4 md:h-5 md:w-5 block flex-none rounded-full border-2 border-white bg-gradient-to-br from-gray-300 to-gray-100 dark:border-gray-900 dark:from-gray-600 dark:to-gray-800"
+                                title="Sainbayar Sukhbaatar"
+                                style="content-visibility: auto"
+                              ></li>
+                              <li
+                                class="-mr-2 h-4 w-4 md:h-5 md:w-5 block flex-none rounded-full border-2 border-white bg-gradient-to-br from-gray-300 to-gray-100 dark:border-gray-900 dark:from-gray-600 dark:to-gray-800"
+                                title="Kyunghyun Cho"
+                                style="content-visibility: auto"
+                              ></li>
+                              <li
+                                class="-mr-2 h-4 w-4 md:h-5 md:w-5 block flex-none rounded-full border-2 border-white bg-gradient-to-br from-gray-300 to-gray-100 dark:border-gray-900 dark:from-gray-600 dark:to-gray-800"
+                                title="Richard Yuanzhe Pang"
+                                style="content-visibility: auto"
+                              ></li>
+                              <li
+                                class="-mr-2 h-4 w-4 md:h-5 md:w-5 block flex-none rounded-full border-2 border-white bg-gradient-to-br from-gray-300 to-gray-100 dark:border-gray-900 dark:from-gray-600 dark:to-gray-800"
+                                title="Weizhe Yuan"
+                                style="content-visibility: auto"
+                              ></li>
+                              <li
+                                class="text-gray-600 hover:text-gray-700 order-first ml-3"
+                              >
+                                <div
+                                  class="flex truncate text-base text-gray-350"
+                                >
+                                  <div class="ml-1 mr-2.5">·</div>
+                                  6 authors
+                                </div>
+                              </li>
+                            </ul></a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+              </div>
+              <div>
+                <article
+                  class="flex flex-col overflow-hidden rounded-xl border"
+                >
+                  <a
+                    href="https://huggingface.co/papers/2401.09985"
+                    class="shadow-alternate-sm peer relative block h-56 w-full cursor-pointer overflow-hidden rounded-xl border bg-white sm:h-64 md:h-72 lg:h-80 dark:border-gray-700"
+                    ><img
+                      src="./huggingface-papers-raw_files/R3qk6IqP6WI_X4W9_ykJA.png"
+                      alt=""
+                      class="h-full w-full object-cover object-top opacity-80 dark:opacity-70 dark:invert"
+                  /></a>
+                  <div
+                    class="from-gray-50-to-white -mt-2 flex bg-gradient-to-b px-6 pb-6 pt-8"
+                  >
+                    <div class="flex w-full gap-6">
+                      <div class="flex flex-wrap items-center gap-2.5 pt-1">
+                        <a
+                          href="https://huggingface.co/login?next=%2Fpapers%2F2401.09985"
+                          class="self-start"
+                        >
+                          <div
+                            class="shadow-alternate flex h-14 w-12 gap-1 rounded-xl flex-none cursor-pointer select-none flex-col items-center justify-center self-start border-gray-300 bg-white dark:bg-gray-850"
+                          >
+                            <input
+                              type="checkbox"
+                              class="peer hidden"
+                              disabled=""
+                            />
+                            <svg
+                              class="text-sm peer-checked:text-gray-500 group-hover:text-gray-500"
+                              xmlns="http://www.w3.org/2000/svg"
+                              xmlns:xlink="http://www.w3.org/1999/xlink"
+                              aria-hidden="true"
+                              role="img"
+                              width="1em"
+                              height="1em"
+                              preserveAspectRatio="xMidYMid meet"
+                              viewBox="0 0 12 12"
+                            >
+                              <path
+                                fill="currentColor"
+                                d="M5.19 2.67a.94.94 0 0 1 1.62 0l3.31 5.72a.94.94 0 0 1-.82 1.4H2.7a.94.94 0 0 1-.82-1.4l3.31-5.7v-.02Z"
+                              ></path>
+                            </svg>
+                            <div class="leading-none">2</div>
+                          </div></a
+                        >
+                      </div>
+                      <div class="w-full">
+                        <h3
+                          class="mb-1 text-lg font-semibold leading-[1.2] hover:underline peer-hover:underline md:text-2xl"
+                        >
+                          <a
+                            href="https://huggingface.co/papers/2401.09985"
+                            class="cursor-pointer"
+                            >WorldDreamer: Towards General World Models for
+                            Video Generation via Predicting Masked Tokens</a
+                          >
+                        </h3>
+                        <div class="flex items-center justify-between">
+                          <a
+                            href="https://huggingface.co/papers/2401.09985"
+                            class="flex"
+                            ><ul
+                              class="flex items-center flex-row-reverse text-sm"
+                            >
+                              <li
+                                class="-mr-2 h-4 w-4 md:h-5 md:w-5 block flex-none rounded-full border-2 border-white bg-gradient-to-br from-gray-300 to-gray-100 dark:border-gray-900 dark:from-gray-600 dark:to-gray-800"
+                                title="Xinze Chen"
+                                style="content-visibility: auto"
+                              ></li>
+                              <li
+                                class="-mr-2 h-4 w-4 md:h-5 md:w-5 block flex-none rounded-full border-2 border-white bg-gradient-to-br from-gray-300 to-gray-100 dark:border-gray-900 dark:from-gray-600 dark:to-gray-800"
+                                title="Boyuan Wang"
+                                style="content-visibility: auto"
+                              ></li>
+                              <li
+                                class="-mr-2 h-4 w-4 md:h-5 md:w-5 block flex-none rounded-full border-2 border-white bg-gradient-to-br from-gray-300 to-gray-100 dark:border-gray-900 dark:from-gray-600 dark:to-gray-800"
+                                title="Guan Huang"
+                                style="content-visibility: auto"
+                              ></li>
+                              <li
+                                class="-mr-2 h-4 w-4 md:h-5 md:w-5 block flex-none rounded-full border-2 border-white bg-gradient-to-br from-gray-300 to-gray-100 dark:border-gray-900 dark:from-gray-600 dark:to-gray-800"
+                                title="Xiaofeng Wang"
+                                style="content-visibility: auto"
+                              ></li>
+                              <li
+                                class="-mr-2 h-4 w-4 md:h-5 md:w-5 block flex-none rounded-full border-2 border-white bg-gradient-to-br from-gray-300 to-gray-100 dark:border-gray-900 dark:from-gray-600 dark:to-gray-800"
+                                title="ZhengZhu"
+                                style="content-visibility: auto"
+                              >
+                                <img
+                                  class="overflow-hidden rounded-full"
+                                  alt=""
+                                  src="./huggingface-papers-raw_files/bcca51bdc27c664f8f132420e6ed99fa.svg"
+                                />
+                              </li>
+                              <li
+                                class="text-gray-600 hover:text-gray-700 order-first ml-3"
+                              >
+                                <div
+                                  class="flex truncate text-base text-gray-350"
+                                >
+                                  <div class="ml-1 mr-2.5">·</div>
+                                  6 authors
+                                </div>
+                              </li>
+                            </ul></a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+              </div>
+              <div>
+                <article
+                  class="flex flex-col overflow-hidden rounded-xl border"
+                >
+                  <a
+                    href="https://huggingface.co/papers/2401.10061"
+                    class="shadow-alternate-sm peer relative block h-56 w-full cursor-pointer overflow-hidden rounded-xl border bg-white sm:h-64 md:h-72 lg:h-80 dark:border-gray-700"
+                    ><img
+                      src="./huggingface-papers-raw_files/S7274X86qLOt_miW5W9qL.png"
+                      alt=""
+                      class="h-full w-full object-cover object-top opacity-80 dark:opacity-70 dark:invert"
+                  /></a>
+                  <div
+                    class="from-gray-50-to-white -mt-2 flex bg-gradient-to-b px-6 pb-6 pt-8"
+                  >
+                    <div class="flex w-full gap-6">
+                      <div class="flex flex-wrap items-center gap-2.5 pt-1">
+                        <a
+                          href="https://huggingface.co/login?next=%2Fpapers%2F2401.10061"
+                          class="self-start"
+                        >
+                          <div
+                            class="shadow-alternate flex h-14 w-12 gap-1 rounded-xl flex-none cursor-pointer select-none flex-col items-center justify-center self-start border-gray-300 bg-white dark:bg-gray-850"
+                          >
+                            <input
+                              type="checkbox"
+                              class="peer hidden"
+                              disabled=""
+                            />
+                            <svg
+                              class="text-sm peer-checked:text-gray-500 group-hover:text-gray-500"
+                              xmlns="http://www.w3.org/2000/svg"
+                              xmlns:xlink="http://www.w3.org/1999/xlink"
+                              aria-hidden="true"
+                              role="img"
+                              width="1em"
+                              height="1em"
+                              preserveAspectRatio="xMidYMid meet"
+                              viewBox="0 0 12 12"
+                            >
+                              <path
+                                fill="currentColor"
+                                d="M5.19 2.67a.94.94 0 0 1 1.62 0l3.31 5.72a.94.94 0 0 1-.82 1.4H2.7a.94.94 0 0 1-.82-1.4l3.31-5.7v-.02Z"
+                              ></path>
+                            </svg>
+                            <div class="leading-none">1</div>
+                          </div></a
+                        >
+                      </div>
+                      <div class="w-full">
+                        <h3
+                          class="mb-1 text-lg font-semibold leading-[1.2] hover:underline peer-hover:underline md:text-2xl"
+                        >
+                          <a
+                            href="https://huggingface.co/papers/2401.10061"
+                            class="cursor-pointer"
+                            >DiffusionGPT: LLM-Driven Text-to-Image Generation
+                            System</a
+                          >
+                        </h3>
+                        <div class="flex items-center justify-between">
+                          <a
+                            href="https://huggingface.co/papers/2401.10061"
+                            class="flex"
+                            ><ul
+                              class="flex items-center flex-row-reverse text-sm"
+                            >
+                              <li
+                                class="-mr-2 h-4 w-4 md:h-5 md:w-5 block flex-none rounded-full border-2 border-white bg-gradient-to-br from-gray-300 to-gray-100 dark:border-gray-900 dark:from-gray-600 dark:to-gray-800"
+                                title="Huixia Li"
+                                style="content-visibility: auto"
+                              ></li>
+                              <li
+                                class="-mr-2 h-4 w-4 md:h-5 md:w-5 block flex-none rounded-full border-2 border-white bg-gradient-to-br from-gray-300 to-gray-100 dark:border-gray-900 dark:from-gray-600 dark:to-gray-800"
+                                title="Yuxi Ren"
+                                style="content-visibility: auto"
+                              ></li>
+                              <li
+                                class="-mr-2 h-4 w-4 md:h-5 md:w-5 block flex-none rounded-full border-2 border-white bg-gradient-to-br from-gray-300 to-gray-100 dark:border-gray-900 dark:from-gray-600 dark:to-gray-800"
+                                title="Weifeng Chen"
+                                style="content-visibility: auto"
+                              ></li>
+                              <li
+                                class="-mr-2 h-4 w-4 md:h-5 md:w-5 block flex-none rounded-full border-2 border-white bg-gradient-to-br from-gray-300 to-gray-100 dark:border-gray-900 dark:from-gray-600 dark:to-gray-800"
+                                title="Jie Wu"
+                                style="content-visibility: auto"
+                              ></li>
+                              <li
+                                class="-mr-2 h-4 w-4 md:h-5 md:w-5 block flex-none rounded-full border-2 border-white bg-gradient-to-br from-gray-300 to-gray-100 dark:border-gray-900 dark:from-gray-600 dark:to-gray-800"
+                                title="Jie Qin"
+                                style="content-visibility: auto"
+                              ></li>
+                              <li
+                                class="text-gray-600 hover:text-gray-700 order-first ml-3"
+                              >
+                                <div
+                                  class="flex truncate text-base text-gray-350"
+                                >
+                                  <div class="ml-1 mr-2.5">·</div>
+                                  9 authors
+                                </div>
+                              </li>
+                            </ul></a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+              </div>
+              <div>
+                <article
+                  class="flex flex-col overflow-hidden rounded-xl border"
+                >
+                  <a
+                    href="https://huggingface.co/papers/2401.09865"
+                    class="shadow-alternate-sm peer relative block h-56 w-full cursor-pointer overflow-hidden rounded-xl border bg-white sm:h-64 md:h-72 lg:h-80 dark:border-gray-700"
+                    ><img
+                      src="./huggingface-papers-raw_files/S6rsTD3mFqV4MVXbH3YUK.png"
+                      alt=""
+                      class="h-full w-full object-cover object-top opacity-80 dark:opacity-70 dark:invert"
+                  /></a>
+                  <div
+                    class="from-gray-50-to-white -mt-2 flex bg-gradient-to-b px-6 pb-6 pt-8"
+                  >
+                    <div class="flex w-full gap-6">
+                      <div class="flex flex-wrap items-center gap-2.5 pt-1">
+                        <a
+                          href="https://huggingface.co/login?next=%2Fpapers%2F2401.09865"
+                          class="self-start"
+                        >
+                          <div
+                            class="shadow-alternate flex h-14 w-12 gap-1 rounded-xl flex-none cursor-pointer select-none flex-col items-center justify-center self-start border-gray-300 bg-white dark:bg-gray-850"
+                          >
+                            <input
+                              type="checkbox"
+                              class="peer hidden"
+                              disabled=""
+                            />
+                            <svg
+                              class="text-sm peer-checked:text-gray-500 group-hover:text-gray-500"
+                              xmlns="http://www.w3.org/2000/svg"
+                              xmlns:xlink="http://www.w3.org/1999/xlink"
+                              aria-hidden="true"
+                              role="img"
+                              width="1em"
+                              height="1em"
+                              preserveAspectRatio="xMidYMid meet"
+                              viewBox="0 0 12 12"
+                            >
+                              <path
+                                fill="currentColor"
+                                d="M5.19 2.67a.94.94 0 0 1 1.62 0l3.31 5.72a.94.94 0 0 1-.82 1.4H2.7a.94.94 0 0 1-.82-1.4l3.31-5.7v-.02Z"
+                              ></path>
+                            </svg>
+                            <div class="leading-none">1</div>
+                          </div></a
+                        >
+                      </div>
+                      <div class="w-full">
+                        <h3
+                          class="mb-1 text-lg font-semibold leading-[1.2] hover:underline peer-hover:underline md:text-2xl"
+                        >
+                          <a
+                            href="https://huggingface.co/papers/2401.09865"
+                            class="cursor-pointer"
+                            >Improving fine-grained understanding in image-text
+                            pre-training</a
+                          >
+                        </h3>
+                        <div class="flex items-center justify-between">
+                          <a
+                            href="https://huggingface.co/papers/2401.09865"
+                            class="flex"
+                            ><ul
+                              class="flex items-center flex-row-reverse text-sm"
+                            >
+                              <li
+                                class="-mr-2 h-4 w-4 md:h-5 md:w-5 block flex-none rounded-full border-2 border-white bg-gradient-to-br from-gray-300 to-gray-100 dark:border-gray-900 dark:from-gray-600 dark:to-gray-800"
+                                title="Matko Bošnjak"
+                                style="content-visibility: auto"
+                              ></li>
+                              <li
+                                class="-mr-2 h-4 w-4 md:h-5 md:w-5 block flex-none rounded-full border-2 border-white bg-gradient-to-br from-gray-300 to-gray-100 dark:border-gray-900 dark:from-gray-600 dark:to-gray-800"
+                                title="Goker Erdogan"
+                                style="content-visibility: auto"
+                              ></li>
+                              <li
+                                class="-mr-2 h-4 w-4 md:h-5 md:w-5 block flex-none rounded-full border-2 border-white bg-gradient-to-br from-gray-300 to-gray-100 dark:border-gray-900 dark:from-gray-600 dark:to-gray-800"
+                                title="Matthias Bauer"
+                                style="content-visibility: auto"
+                              ></li>
+                              <li
+                                class="-mr-2 h-4 w-4 md:h-5 md:w-5 block flex-none rounded-full border-2 border-white bg-gradient-to-br from-gray-300 to-gray-100 dark:border-gray-900 dark:from-gray-600 dark:to-gray-800"
+                                title="Anastasija Ilić"
+                                style="content-visibility: auto"
+                              ></li>
+                              <li
+                                class="-mr-2 h-4 w-4 md:h-5 md:w-5 block flex-none rounded-full border-2 border-white bg-gradient-to-br from-gray-300 to-gray-100 dark:border-gray-900 dark:from-gray-600 dark:to-gray-800"
+                                title="Ioana Bica"
+                                style="content-visibility: auto"
+                              ></li>
+                              <li
+                                class="text-gray-600 hover:text-gray-700 order-first ml-3"
+                              >
+                                <div
+                                  class="flex truncate text-base text-gray-350"
+                                >
+                                  <div class="ml-1 mr-2.5">·</div>
+                                  11 authors
+                                </div>
+                              </li>
+                            </ul></a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+              </div>
+              <div>
+                <article
+                  class="flex flex-col overflow-hidden rounded-xl border"
+                >
+                  <a
+                    href="https://huggingface.co/papers/2401.10225"
+                    class="shadow-alternate-sm peer relative block h-56 w-full cursor-pointer overflow-hidden rounded-xl border bg-white sm:h-64 md:h-72 lg:h-80 dark:border-gray-700"
+                    ><img
+                      src="./huggingface-papers-raw_files/UkABNPp5_cGu24Z_PYrnA.png"
+                      alt=""
+                      class="h-full w-full object-cover object-top opacity-80 dark:opacity-70 dark:invert"
+                  /></a>
+                  <div
+                    class="from-gray-50-to-white -mt-2 flex bg-gradient-to-b px-6 pb-6 pt-8"
+                  >
+                    <div class="flex w-full gap-6">
+                      <div class="flex flex-wrap items-center gap-2.5 pt-1">
+                        <a
+                          href="https://huggingface.co/login?next=%2Fpapers%2F2401.10225"
+                          class="self-start"
+                        >
+                          <div
+                            class="shadow-alternate flex h-14 w-12 gap-1 rounded-xl flex-none cursor-pointer select-none flex-col items-center justify-center self-start border-gray-300 bg-white dark:bg-gray-850"
+                          >
+                            <input
+                              type="checkbox"
+                              class="peer hidden"
+                              disabled=""
+                            />
+                            <svg
+                              class="text-sm peer-checked:text-gray-500 group-hover:text-gray-500"
+                              xmlns="http://www.w3.org/2000/svg"
+                              xmlns:xlink="http://www.w3.org/1999/xlink"
+                              aria-hidden="true"
+                              role="img"
+                              width="1em"
+                              height="1em"
+                              preserveAspectRatio="xMidYMid meet"
+                              viewBox="0 0 12 12"
+                            >
+                              <path
+                                fill="currentColor"
+                                d="M5.19 2.67a.94.94 0 0 1 1.62 0l3.31 5.72a.94.94 0 0 1-.82 1.4H2.7a.94.94 0 0 1-.82-1.4l3.31-5.7v-.02Z"
+                              ></path>
+                            </svg>
+                            <div class="leading-none">1</div>
+                          </div></a
+                        >
+                      </div>
+                      <div class="w-full">
+                        <h3
+                          class="mb-1 text-lg font-semibold leading-[1.2] hover:underline peer-hover:underline md:text-2xl"
+                        >
+                          <a
+                            href="https://huggingface.co/papers/2401.10225"
+                            class="cursor-pointer"
+                            >ChatQA: Building GPT-4 Level Conversational QA
+                            Models</a
+                          >
+                        </h3>
+                        <div class="flex items-center justify-between">
+                          <a
+                            href="https://huggingface.co/papers/2401.10225"
+                            class="flex"
+                            ><ul
+                              class="flex items-center flex-row-reverse text-sm"
+                            >
+                              <li
+                                class="-mr-2 h-4 w-4 md:h-5 md:w-5 block flex-none rounded-full border-2 border-white bg-gradient-to-br from-gray-300 to-gray-100 dark:border-gray-900 dark:from-gray-600 dark:to-gray-800"
+                                title="Mohammad Shoeybi"
+                                style="content-visibility: auto"
+                              ></li>
+                              <li
+                                class="-mr-2 h-4 w-4 md:h-5 md:w-5 block flex-none rounded-full border-2 border-white bg-gradient-to-br from-gray-300 to-gray-100 dark:border-gray-900 dark:from-gray-600 dark:to-gray-800"
+                                title="Peng Xu"
+                                style="content-visibility: auto"
+                              ></li>
+                              <li
+                                class="-mr-2 h-4 w-4 md:h-5 md:w-5 block flex-none rounded-full border-2 border-white bg-gradient-to-br from-gray-300 to-gray-100 dark:border-gray-900 dark:from-gray-600 dark:to-gray-800"
+                                title="Rajarshi Roy"
+                                style="content-visibility: auto"
+                              ></li>
+                              <li
+                                class="-mr-2 h-4 w-4 md:h-5 md:w-5 block flex-none rounded-full border-2 border-white bg-gradient-to-br from-gray-300 to-gray-100 dark:border-gray-900 dark:from-gray-600 dark:to-gray-800"
+                                title="Wei Ping"
+                                style="content-visibility: auto"
+                              ></li>
+                              <li
+                                class="-mr-2 h-4 w-4 md:h-5 md:w-5 block flex-none rounded-full border-2 border-white bg-gradient-to-br from-gray-300 to-gray-100 dark:border-gray-900 dark:from-gray-600 dark:to-gray-800"
+                                title="Zihan Liu"
+                                style="content-visibility: auto"
+                              ></li>
+                              <li
+                                class="text-gray-600 hover:text-gray-700 order-first ml-3"
+                              >
+                                <div
+                                  class="flex truncate text-base text-gray-350"
+                                >
+                                  <div class="ml-1 mr-2.5">·</div>
+                                  6 authors
+                                </div>
+                              </li>
+                            </ul></a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+              </div>
+              <div>
+                <article
+                  class="flex flex-col overflow-hidden rounded-xl border"
+                >
+                  <a
+                    href="https://huggingface.co/papers/2401.10166"
+                    class="shadow-alternate-sm peer relative block h-56 w-full cursor-pointer overflow-hidden rounded-xl border bg-white sm:h-64 md:h-72 lg:h-80 dark:border-gray-700"
+                    ><img
+                      src="./huggingface-papers-raw_files/MMWId1L6muy8vFuad1NO2.png"
+                      alt=""
+                      class="h-full w-full object-cover object-top opacity-80 dark:opacity-70 dark:invert"
+                  /></a>
+                  <div
+                    class="from-gray-50-to-white -mt-2 flex bg-gradient-to-b px-6 pb-6 pt-8"
+                  >
+                    <div class="flex w-full gap-6">
+                      <div class="flex flex-wrap items-center gap-2.5 pt-1">
+                        <a
+                          href="https://huggingface.co/login?next=%2Fpapers%2F2401.10166"
+                          class="self-start"
+                        >
+                          <div
+                            class="shadow-alternate flex h-14 w-12 gap-1 rounded-xl flex-none cursor-pointer select-none flex-col items-center justify-center self-start border-gray-300 bg-white dark:bg-gray-850"
+                          >
+                            <input
+                              type="checkbox"
+                              class="peer hidden"
+                              disabled=""
+                            />
+                            <svg
+                              class="text-sm peer-checked:text-gray-500 group-hover:text-gray-500"
+                              xmlns="http://www.w3.org/2000/svg"
+                              xmlns:xlink="http://www.w3.org/1999/xlink"
+                              aria-hidden="true"
+                              role="img"
+                              width="1em"
+                              height="1em"
+                              preserveAspectRatio="xMidYMid meet"
+                              viewBox="0 0 12 12"
+                            >
+                              <path
+                                fill="currentColor"
+                                d="M5.19 2.67a.94.94 0 0 1 1.62 0l3.31 5.72a.94.94 0 0 1-.82 1.4H2.7a.94.94 0 0 1-.82-1.4l3.31-5.7v-.02Z"
+                              ></path>
+                            </svg>
+                            <div class="leading-none">-</div>
+                          </div></a
+                        >
+                      </div>
+                      <div class="w-full">
+                        <h3
+                          class="mb-1 text-lg font-semibold leading-[1.2] hover:underline peer-hover:underline md:text-2xl"
+                        >
+                          <a
+                            href="https://huggingface.co/papers/2401.10166"
+                            class="cursor-pointer"
+                            >VMamba: Visual State Space Model</a
+                          >
+                        </h3>
+                        <div class="flex items-center justify-between">
+                          <a
+                            href="https://huggingface.co/papers/2401.10166"
+                            class="flex"
+                            ><ul
+                              class="flex items-center flex-row-reverse text-sm"
+                            >
+                              <li
+                                class="-mr-2 h-4 w-4 md:h-5 md:w-5 block flex-none rounded-full border-2 border-white bg-gradient-to-br from-gray-300 to-gray-100 dark:border-gray-900 dark:from-gray-600 dark:to-gray-800"
+                                title="Lingxi Xie"
+                                style="content-visibility: auto"
+                              ></li>
+                              <li
+                                class="-mr-2 h-4 w-4 md:h-5 md:w-5 block flex-none rounded-full border-2 border-white bg-gradient-to-br from-gray-300 to-gray-100 dark:border-gray-900 dark:from-gray-600 dark:to-gray-800"
+                                title="Hongtian Yu"
+                                style="content-visibility: auto"
+                              ></li>
+                              <li
+                                class="-mr-2 h-4 w-4 md:h-5 md:w-5 block flex-none rounded-full border-2 border-white bg-gradient-to-br from-gray-300 to-gray-100 dark:border-gray-900 dark:from-gray-600 dark:to-gray-800"
+                                title="Yuzhong Zhao"
+                                style="content-visibility: auto"
+                              ></li>
+                              <li
+                                class="-mr-2 h-4 w-4 md:h-5 md:w-5 block flex-none rounded-full border-2 border-white bg-gradient-to-br from-gray-300 to-gray-100 dark:border-gray-900 dark:from-gray-600 dark:to-gray-800"
+                                title="Yunjie Tian"
+                                style="content-visibility: auto"
+                              ></li>
+                              <li
+                                class="-mr-2 h-4 w-4 md:h-5 md:w-5 block flex-none rounded-full border-2 border-white bg-gradient-to-br from-gray-300 to-gray-100 dark:border-gray-900 dark:from-gray-600 dark:to-gray-800"
+                                title="Yue Liu"
+                                style="content-visibility: auto"
+                              ></li>
+                              <li
+                                class="text-gray-600 hover:text-gray-700 order-first ml-3"
+                              >
+                                <div
+                                  class="flex truncate text-base text-gray-350"
+                                >
+                                  <div class="ml-1 mr-2.5">·</div>
+                                  8 authors
+                                </div>
+                              </li>
+                            </ul></a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+              </div>
+              <div>
+                <article
+                  class="flex flex-col overflow-hidden rounded-xl border"
+                >
+                  <a
+                    href="https://huggingface.co/papers/2401.10032"
+                    class="shadow-alternate-sm peer relative block h-56 w-full cursor-pointer overflow-hidden rounded-xl border bg-white sm:h-64 md:h-72 lg:h-80 dark:border-gray-700"
+                    ><img
+                      src="./huggingface-papers-raw_files/BE4b_4cz9zQl5idby3k_B.png"
+                      alt=""
+                      class="h-full w-full object-cover object-top opacity-80 dark:opacity-70 dark:invert"
+                  /></a>
+                  <div
+                    class="from-gray-50-to-white -mt-2 flex bg-gradient-to-b px-6 pb-6 pt-8"
+                  >
+                    <div class="flex w-full gap-6">
+                      <div class="flex flex-wrap items-center gap-2.5 pt-1">
+                        <a
+                          href="https://huggingface.co/login?next=%2Fpapers%2F2401.10032"
+                          class="self-start"
+                        >
+                          <div
+                            class="shadow-alternate flex h-14 w-12 gap-1 rounded-xl flex-none cursor-pointer select-none flex-col items-center justify-center self-start border-gray-300 bg-white dark:bg-gray-850"
+                          >
+                            <input
+                              type="checkbox"
+                              class="peer hidden"
+                              disabled=""
+                            />
+                            <svg
+                              class="text-sm peer-checked:text-gray-500 group-hover:text-gray-500"
+                              xmlns="http://www.w3.org/2000/svg"
+                              xmlns:xlink="http://www.w3.org/1999/xlink"
+                              aria-hidden="true"
+                              role="img"
+                              width="1em"
+                              height="1em"
+                              preserveAspectRatio="xMidYMid meet"
+                              viewBox="0 0 12 12"
+                            >
+                              <path
+                                fill="currentColor"
+                                d="M5.19 2.67a.94.94 0 0 1 1.62 0l3.31 5.72a.94.94 0 0 1-.82 1.4H2.7a.94.94 0 0 1-.82-1.4l3.31-5.7v-.02Z"
+                              ></path>
+                            </svg>
+                            <div class="leading-none">-</div>
+                          </div></a
+                        >
+                      </div>
+                      <div class="w-full">
+                        <h3
+                          class="mb-1 text-lg font-semibold leading-[1.2] hover:underline peer-hover:underline md:text-2xl"
+                        >
+                          <a
+                            href="https://huggingface.co/papers/2401.10032"
+                            class="cursor-pointer"
+                            >FreGrad: Lightweight and Fast Frequency-aware
+                            Diffusion Vocoder</a
+                          >
+                        </h3>
+                        <div class="flex items-center justify-between">
+                          <a
+                            href="https://huggingface.co/papers/2401.10032"
+                            class="flex"
+                            ><ul
+                              class="flex items-center flex-row-reverse text-sm"
+                            >
+                              <li
+                                class="-mr-2 h-4 w-4 md:h-5 md:w-5 block flex-none rounded-full border-2 border-white bg-gradient-to-br from-gray-300 to-gray-100 dark:border-gray-900 dark:from-gray-600 dark:to-gray-800"
+                                title="Joon Son Chung"
+                                style="content-visibility: auto"
+                              ></li>
+                              <li
+                                class="-mr-2 h-4 w-4 md:h-5 md:w-5 block flex-none rounded-full border-2 border-white bg-gradient-to-br from-gray-300 to-gray-100 dark:border-gray-900 dark:from-gray-600 dark:to-gray-800"
+                                title="Jaehun Kim"
+                                style="content-visibility: auto"
+                              ></li>
+                              <li
+                                class="-mr-2 h-4 w-4 md:h-5 md:w-5 block flex-none rounded-full border-2 border-white bg-gradient-to-br from-gray-300 to-gray-100 dark:border-gray-900 dark:from-gray-600 dark:to-gray-800"
+                                title="Youngjoon Jang"
+                                style="content-visibility: auto"
+                              ></li>
+                              <li
+                                class="-mr-2 h-4 w-4 md:h-5 md:w-5 block flex-none rounded-full border-2 border-white bg-gradient-to-br from-gray-300 to-gray-100 dark:border-gray-900 dark:from-gray-600 dark:to-gray-800"
+                                title="Ji-Hoon Kim"
+                                style="content-visibility: auto"
+                              ></li>
+                              <li
+                                class="-mr-2 h-4 w-4 md:h-5 md:w-5 block flex-none rounded-full border-2 border-white bg-gradient-to-br from-gray-300 to-gray-100 dark:border-gray-900 dark:from-gray-600 dark:to-gray-800"
+                                title="Tan Dat Nguyen"
+                                style="content-visibility: auto"
+                              ></li>
+                              <li
+                                class="text-gray-600 hover:text-gray-700 order-first ml-3"
+                              >
+                                <div
+                                  class="flex truncate text-base text-gray-350"
+                                >
+                                  <div class="ml-1 mr-2.5">·</div>
+                                  5 authors
+                                </div>
+                              </li>
+                            </ul></a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+              </div>
+              <div>
+                <article
+                  class="flex flex-col overflow-hidden rounded-xl border"
+                >
+                  <video
+                    src="https://cdn-uploads.huggingface.co/production/uploads/60f1abe7544c2adfd699860c/GFvdOMUcvcL_cSHtfo0BG.mp4"
+                    class="shadow-alternate-sm h-56 w-full cursor-pointer overflow-hidden rounded-xl border bg-white object-top sm:h-64 md:h-72 lg:h-80"
+                    controls=""
+                    playsinline=""
+                  ></video>
+                  <div
+                    class="from-gray-50-to-white -mt-2 flex bg-gradient-to-b px-6 pb-6 pt-8"
+                  >
+                    <div class="flex w-full gap-6">
+                      <div class="flex flex-wrap items-center gap-2.5 pt-1">
+                        <a
+                          href="https://huggingface.co/login?next=%2Fpapers%2F2401.09962"
+                          class="self-start"
+                        >
+                          <div
+                            class="shadow-alternate flex h-14 w-12 gap-1 rounded-xl flex-none cursor-pointer select-none flex-col items-center justify-center self-start border-gray-300 bg-white dark:bg-gray-850"
+                          >
+                            <input
+                              type="checkbox"
+                              class="peer hidden"
+                              disabled=""
+                            />
+                            <svg
+                              class="text-sm peer-checked:text-gray-500 group-hover:text-gray-500"
+                              xmlns="http://www.w3.org/2000/svg"
+                              xmlns:xlink="http://www.w3.org/1999/xlink"
+                              aria-hidden="true"
+                              role="img"
+                              width="1em"
+                              height="1em"
+                              preserveAspectRatio="xMidYMid meet"
+                              viewBox="0 0 12 12"
+                            >
+                              <path
+                                fill="currentColor"
+                                d="M5.19 2.67a.94.94 0 0 1 1.62 0l3.31 5.72a.94.94 0 0 1-.82 1.4H2.7a.94.94 0 0 1-.82-1.4l3.31-5.7v-.02Z"
+                              ></path>
+                            </svg>
+                            <div class="leading-none">-</div>
+                          </div></a
+                        >
+                      </div>
+                      <div class="w-full">
+                        <h3
+                          class="mb-1 text-lg font-semibold leading-[1.2] hover:underline peer-hover:underline md:text-2xl"
+                        >
+                          <a
+                            href="https://huggingface.co/papers/2401.09962"
+                            class="cursor-pointer"
+                            >CustomVideo: Customizing Text-to-Video Generation
+                            with Multiple Subjects</a
+                          >
+                        </h3>
+                        <div class="flex items-center justify-between">
+                          <a
+                            href="https://huggingface.co/papers/2401.09962"
+                            class="flex"
+                            ><ul
+                              class="flex items-center flex-row-reverse text-sm"
+                            >
+                              <li
+                                class="-mr-2 h-4 w-4 md:h-5 md:w-5 block flex-none rounded-full border-2 border-white bg-gradient-to-br from-gray-300 to-gray-100 dark:border-gray-900 dark:from-gray-600 dark:to-gray-800"
+                                title="Yong Guo"
+                                style="content-visibility: auto"
+                              ></li>
+                              <li
+                                class="-mr-2 h-4 w-4 md:h-5 md:w-5 block flex-none rounded-full border-2 border-white bg-gradient-to-br from-gray-300 to-gray-100 dark:border-gray-900 dark:from-gray-600 dark:to-gray-800"
+                                title="Lingting Zhu"
+                                style="content-visibility: auto"
+                              ></li>
+                              <li
+                                class="-mr-2 h-4 w-4 md:h-5 md:w-5 block flex-none rounded-full border-2 border-white bg-gradient-to-br from-gray-300 to-gray-100 dark:border-gray-900 dark:from-gray-600 dark:to-gray-800"
+                                title="Enze Xie"
+                                style="content-visibility: auto"
+                              ></li>
+                              <li
+                                class="-mr-2 h-4 w-4 md:h-5 md:w-5 block flex-none rounded-full border-2 border-white bg-gradient-to-br from-gray-300 to-gray-100 dark:border-gray-900 dark:from-gray-600 dark:to-gray-800"
+                                title="Aoxue Li"
+                                style="content-visibility: auto"
+                              ></li>
+                              <li
+                                class="-mr-2 h-4 w-4 md:h-5 md:w-5 block flex-none rounded-full border-2 border-white bg-gradient-to-br from-gray-300 to-gray-100 dark:border-gray-900 dark:from-gray-600 dark:to-gray-800"
+                                title="Zhao Wang"
+                                style="content-visibility: auto"
+                              ></li>
+                              <li
+                                class="text-gray-600 hover:text-gray-700 order-first ml-3"
+                              >
+                                <div
+                                  class="flex truncate text-base text-gray-350"
+                                >
+                                  <div class="ml-1 mr-2.5">·</div>
+                                  7 authors
+                                </div>
+                              </li>
+                            </ul></a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+              </div>
+              <div>
+                <article
+                  class="flex flex-col overflow-hidden rounded-xl border"
+                >
+                  <a
+                    href="https://huggingface.co/papers/2401.09603"
+                    class="shadow-alternate-sm peer relative block h-56 w-full cursor-pointer overflow-hidden rounded-xl border bg-white sm:h-64 md:h-72 lg:h-80 dark:border-gray-700"
+                    ><img
+                      src="./huggingface-papers-raw_files/Ik64AlizVmcMBdGMZpzk8.png"
+                      alt=""
+                      class="h-full w-full object-cover object-top opacity-80 dark:opacity-70 dark:invert"
+                  /></a>
+                  <div
+                    class="from-gray-50-to-white -mt-2 flex bg-gradient-to-b px-6 pb-6 pt-8"
+                  >
+                    <div class="flex w-full gap-6">
+                      <div class="flex flex-wrap items-center gap-2.5 pt-1">
+                        <a
+                          href="https://huggingface.co/login?next=%2Fpapers%2F2401.09603"
+                          class="self-start"
+                        >
+                          <div
+                            class="shadow-alternate flex h-14 w-12 gap-1 rounded-xl flex-none cursor-pointer select-none flex-col items-center justify-center self-start border-gray-300 bg-white dark:bg-gray-850"
+                          >
+                            <input
+                              type="checkbox"
+                              class="peer hidden"
+                              disabled=""
+                            />
+                            <svg
+                              class="text-sm peer-checked:text-gray-500 group-hover:text-gray-500"
+                              xmlns="http://www.w3.org/2000/svg"
+                              xmlns:xlink="http://www.w3.org/1999/xlink"
+                              aria-hidden="true"
+                              role="img"
+                              width="1em"
+                              height="1em"
+                              preserveAspectRatio="xMidYMid meet"
+                              viewBox="0 0 12 12"
+                            >
+                              <path
+                                fill="currentColor"
+                                d="M5.19 2.67a.94.94 0 0 1 1.62 0l3.31 5.72a.94.94 0 0 1-.82 1.4H2.7a.94.94 0 0 1-.82-1.4l3.31-5.7v-.02Z"
+                              ></path>
+                            </svg>
+                            <div class="leading-none">-</div>
+                          </div></a
+                        >
+                      </div>
+                      <div class="w-full">
+                        <h3
+                          class="mb-1 text-lg font-semibold leading-[1.2] hover:underline peer-hover:underline md:text-2xl"
+                        >
+                          <a
+                            href="https://huggingface.co/papers/2401.09603"
+                            class="cursor-pointer"
+                            >Rethinking FID: Towards a Better Evaluation Metric
+                            for Image Generation</a
+                          >
+                        </h3>
+                        <div class="flex items-center justify-between">
+                          <a
+                            href="https://huggingface.co/papers/2401.09603"
+                            class="flex"
+                            ><ul
+                              class="flex items-center flex-row-reverse text-sm"
+                            >
+                              <li
+                                class="-mr-2 h-4 w-4 md:h-5 md:w-5 block flex-none rounded-full border-2 border-white bg-gradient-to-br from-gray-300 to-gray-100 dark:border-gray-900 dark:from-gray-600 dark:to-gray-800"
+                                title="Ayan Chakrabarti"
+                                style="content-visibility: auto"
+                              ></li>
+                              <li
+                                class="-mr-2 h-4 w-4 md:h-5 md:w-5 block flex-none rounded-full border-2 border-white bg-gradient-to-br from-gray-300 to-gray-100 dark:border-gray-900 dark:from-gray-600 dark:to-gray-800"
+                                title="Daniel Glasner"
+                                style="content-visibility: auto"
+                              ></li>
+                              <li
+                                class="-mr-2 h-4 w-4 md:h-5 md:w-5 block flex-none rounded-full border-2 border-white bg-gradient-to-br from-gray-300 to-gray-100 dark:border-gray-900 dark:from-gray-600 dark:to-gray-800"
+                                title="Andreas Veit"
+                                style="content-visibility: auto"
+                              ></li>
+                              <li
+                                class="-mr-2 h-4 w-4 md:h-5 md:w-5 block flex-none rounded-full border-2 border-white bg-gradient-to-br from-gray-300 to-gray-100 dark:border-gray-900 dark:from-gray-600 dark:to-gray-800"
+                                title="Srikumar Ramalingam"
+                                style="content-visibility: auto"
+                              ></li>
+                              <li
+                                class="-mr-2 h-4 w-4 md:h-5 md:w-5 block flex-none rounded-full border-2 border-white bg-gradient-to-br from-gray-300 to-gray-100 dark:border-gray-900 dark:from-gray-600 dark:to-gray-800"
+                                title="Sadeep Jayasumana"
+                                style="content-visibility: auto"
+                              ></li>
+                              <li
+                                class="text-gray-600 hover:text-gray-700 order-first ml-3"
+                              >
+                                <div
+                                  class="flex truncate text-base text-gray-350"
+                                >
+                                  <div class="ml-1 mr-2.5">·</div>
+                                  6 authors
+                                </div>
+                              </li>
+                            </ul></a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+              </div>
+              <div class="col-span-1 flex lg:col-span-2">
+                <a
+                  class="btn gap-2"
+                  href="https://huggingface.co/papers?date=2024-01-18"
+                  ><svg
+                    class=""
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    aria-hidden="true"
+                    focusable="false"
+                    role="img"
+                    width="1em"
+                    height="1em"
+                    preserveAspectRatio="xMidYMid meet"
+                    viewBox="0 0 32 32"
+                  >
+                    <path
+                      d="M14 26l1.41-1.41L7.83 17H28v-2H7.83l7.58-7.59L14 6L4 16l10 10z"
+                      fill="currentColor"
+                    ></path></svg
+                  >Previous</a
+                >
+              </div>
+            </div>
+          </section>
+        </div>
+      </main>
+      <footer class="b-12 mb-2 flex border-t border-gray-100 md:h-14">
+        <nav
+          class="container flex flex-col justify-between space-y-2 py-6 text-gray-500 md:flex-row md:items-center md:space-y-0 md:py-0 md:text-sm"
+        >
+          <div class="font-semibold text-black md:hidden">Company</div>
+          <div
+            class="order-last pt-6 text-gray-400 md:order-none md:pt-0"
+            href="Terms"
+          >
+            © Hugging Face
+          </div>
+          <a
+            class="hover:underline"
+            href="https://huggingface.co/terms-of-service"
+            >TOS</a
+          >
+          <a class="hover:underline" href="https://huggingface.co/privacy"
+            >Privacy</a
+          >
+          <a class="hover:underline" href="https://huggingface.co/huggingface"
+            >About</a
+          >
+          <a
+            class="hover:underline"
+            href="https://apply.workable.com/huggingface/"
+            >Jobs</a
+          >
+          <a
+            href="https://huggingface.co/"
+            class="group order-first flex-none pb-6 md:order-none md:pb-0"
+            ><svg
+              class="h-7 w-7 transition-transform group-hover:-translate-y-px"
+              viewBox="0 0 95 88"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M47.2119 76.5C66.4037 76.5 81.9619 60.9419 81.9619 41.75C81.9619 22.5581 66.4037 7 47.2119 7C28.02 7 12.4619 22.5581 12.4619 41.75C12.4619 60.9419 28.02 76.5 47.2119 76.5Z"
+                fill="#FFD21E"
+              ></path>
+              <path
+                d="M81.9619 41.75C81.9619 22.5581 66.4037 7 47.2119 7C28.02 7 12.4619 22.5581 12.4619 41.75C12.4619 60.9419 28.02 76.5 47.2119 76.5C66.4037 76.5 81.9619 60.9419 81.9619 41.75ZM8.46185 41.75C8.46185 20.349 25.8108 3 47.2119 3C68.6129 3 85.9619 20.349 85.9619 41.75C85.9619 63.151 68.6129 80.5 47.2119 80.5C25.8108 80.5 8.46185 63.151 8.46185 41.75Z"
+                fill="#FF9D0B"
+              ></path>
+              <path
+                d="M58.5024 32.2915C59.7768 32.7415 60.2839 35.3615 61.5713 34.6769C64.0095 33.3805 64.9351 30.353 63.6387 27.9148C62.3423 25.4767 59.3148 24.5511 56.8766 25.8475C54.4384 27.1439 53.5128 30.1714 54.8092 32.6096C55.4211 33.7604 57.3632 31.8892 58.5024 32.2915Z"
+                fill="#3A3B45"
+              ></path>
+              <path
+                d="M34.9454 32.2915C33.671 32.7415 33.164 35.3615 31.8766 34.6769C29.4384 33.3805 28.5128 30.353 29.8092 27.9148C31.1056 25.4767 34.1331 24.5511 36.5713 25.8475C39.0095 27.1439 39.9351 30.1714 38.6387 32.6096C38.0268 33.7604 36.0846 31.8892 34.9454 32.2915Z"
+                fill="#3A3B45"
+              ></path>
+              <path
+                d="M46.9619 56.289C56.7903 56.289 59.9619 47.5261 59.9619 43.0262C59.9619 40.6875 58.3898 41.4236 55.8718 42.6702C53.5449 43.8222 50.4102 45.4101 46.9619 45.4101C39.7822 45.4101 33.9619 38.5263 33.9619 43.0262C33.9619 47.5261 37.1334 56.289 46.9619 56.289Z"
+                fill="#3A3B45"
+              ></path>
+              <mask
+                id="mask0"
+                mask-type="alpha"
+                maskUnits="userSpaceOnUse"
+                x="33"
+                y="41"
+                width="27"
+                height="16"
+              >
+                <path
+                  d="M46.9619 56.289C56.7903 56.289 59.9619 47.5261 59.9619 43.0262C59.9619 40.6875 58.3898 41.4236 55.8718 42.6702C53.5449 43.8222 50.4102 45.4101 46.9619 45.4101C39.7822 45.4101 33.9619 38.5263 33.9619 43.0262C33.9619 47.5261 37.1334 56.289 46.9619 56.289Z"
+                  fill="white"
+                ></path>
+              </mask>
+              <g mask="url(#mask0)">
+                <path
+                  d="M47.2119 66.5C52.0018 66.5 55.8848 62.617 55.8848 57.8271C55.8848 54.0962 53.5291 50.9156 50.224 49.6915C50.1023 49.6464 49.9794 49.604 49.8553 49.5643C49.0219 49.2979 48.1337 52.1623 47.2119 52.1623C46.3506 52.1623 45.5186 49.2797 44.7332 49.5135C41.151 50.5799 38.5389 53.8984 38.5389 57.8271C38.5389 62.617 42.4219 66.5 47.2119 66.5Z"
+                  fill="#F94040"
+                ></path>
+              </g>
+              <path
+                d="M70.7119 37C72.5068 37 73.9619 35.5449 73.9619 33.75C73.9619 31.9551 72.5068 30.5 70.7119 30.5C68.9169 30.5 67.4619 31.9551 67.4619 33.75C67.4619 35.5449 68.9169 37 70.7119 37Z"
+                fill="#FF9D0B"
+              ></path>
+              <path
+                d="M24.2119 37C26.0068 37 27.4619 35.5449 27.4619 33.75C27.4619 31.9551 26.0068 30.5 24.2119 30.5C22.4169 30.5 20.9619 31.9551 20.9619 33.75C20.9619 35.5449 22.4169 37 24.2119 37Z"
+                fill="#FF9D0B"
+              ></path>
+              <path
+                class="origin-bottom-right transition-transform group-hover:-rotate-6"
+                d="M17.5238 48C15.9048 48 14.4578 48.665 13.4488 49.871C12.8248 50.618 12.1728 51.822 12.1198 53.625C11.4408 53.43 10.7878 53.321 10.1778 53.321C8.6278 53.321 7.2278 53.915 6.2378 54.994C4.9658 56.379 4.4008 58.081 4.6468 59.784C4.7638 60.595 5.0348 61.322 5.4398 61.995C4.5858 62.686 3.9568 63.648 3.6528 64.805C3.4148 65.712 3.1708 67.601 4.4448 69.547C4.3638 69.674 4.2878 69.806 4.2168 69.941C3.4508 71.395 3.4018 73.038 4.0778 74.568C5.1028 76.887 7.6498 78.714 12.5958 80.675C15.6728 81.895 18.4878 82.675 18.5128 82.682C22.5808 83.737 26.2598 84.273 29.4448 84.273C35.2988 84.273 39.4898 82.48 41.9018 78.944C45.7838 73.25 45.2288 68.042 40.2058 63.022C37.4258 60.244 35.5778 56.148 35.1928 55.249C34.4168 52.587 32.3648 49.628 28.9538 49.628H28.9528C28.6658 49.628 28.3758 49.651 28.0898 49.696C26.5958 49.931 25.2898 50.791 24.3568 52.085C23.3498 50.833 22.3718 49.837 21.4868 49.275C20.1528 48.429 18.8198 48 17.5238 48ZM17.5238 52C18.0338 52 18.6568 52.217 19.3438 52.653C21.4768 54.006 25.5928 61.081 27.0998 63.833C27.6048 64.755 28.4678 65.145 29.2448 65.145C30.7868 65.145 31.9908 63.612 29.3858 61.664C25.4688 58.733 26.8428 53.942 28.7128 53.647C28.7948 53.634 28.8758 53.628 28.9538 53.628C30.6538 53.628 31.4038 56.558 31.4038 56.558C31.4038 56.558 33.6018 62.078 37.3778 65.851C41.1538 69.625 41.3488 72.654 38.5968 76.69C36.7198 79.442 33.1268 80.273 29.4448 80.273C25.6258 80.273 21.7108 79.379 19.5168 78.81C19.4088 78.782 6.0658 75.013 7.7558 71.805C8.0398 71.266 8.5078 71.05 9.0968 71.05C11.4768 71.05 15.8058 74.592 17.6668 74.592C18.0828 74.592 18.3758 74.415 18.4958 73.983C19.2888 71.138 6.4388 69.942 7.5218 65.821C7.7128 65.092 8.2308 64.796 8.9588 64.797C12.1038 64.797 19.1598 70.328 20.6388 70.328C20.7518 70.328 20.8328 70.295 20.8768 70.225C21.6178 69.029 21.2118 68.194 15.9888 65.033C10.7658 61.871 7.0998 59.969 9.1848 57.699C9.4248 57.437 9.7648 57.321 10.1778 57.321C13.3488 57.322 20.8408 64.14 20.8408 64.14C20.8408 64.14 22.8628 66.243 24.0858 66.243C24.3668 66.243 24.6058 66.132 24.7678 65.858C25.6348 64.396 16.7148 57.636 16.2118 54.847C15.8708 52.957 16.4508 52 17.5238 52Z"
+                fill="#FF9D0B"
+              ></path>
+              <path
+                class="origin-bottom-right transition-transform group-hover:-rotate-6"
+                d="M38.5967 76.6898C41.3487 72.6538 41.1537 69.6248 37.3777 65.8508C33.6017 62.0778 31.4037 56.5578 31.4037 56.5578C31.4037 56.5578 30.5827 53.3518 28.7127 53.6468C26.8427 53.9418 25.4697 58.7328 29.3867 61.6638C33.3037 64.5938 28.6067 66.5848 27.0997 63.8328C25.5927 61.0808 21.4777 54.0058 19.3437 52.6528C17.2107 51.2998 15.7087 52.0578 16.2117 54.8468C16.7147 57.6358 25.6357 64.3958 24.7677 65.8588C23.8997 67.3208 20.8407 64.1398 20.8407 64.1398C20.8407 64.1398 11.2687 55.4288 9.18465 57.6988C7.10065 59.9688 10.7657 61.8708 15.9887 65.0328C21.2127 68.1938 21.6177 69.0288 20.8767 70.2248C20.1347 71.4208 8.60465 61.6998 7.52165 65.8208C6.43965 69.9418 19.2887 71.1378 18.4957 73.9828C17.7027 76.8288 9.44465 68.5978 7.75565 71.8048C6.06565 75.0128 19.4087 78.7818 19.5167 78.8098C23.8267 79.9278 34.7727 82.2968 38.5967 76.6898Z"
+                fill="#FFD21E"
+              ></path>
+              <path
+                class="origin-bottom-left transition-transform group-hover:rotate-6"
+                d="M77.3999 48C79.0189 48 80.4659 48.665 81.4749 49.871C82.0989 50.618 82.7509 51.822 82.8039 53.625C83.4829 53.43 84.1359 53.321 84.7459 53.321C86.2959 53.321 87.6959 53.915 88.6859 54.994C89.9579 56.379 90.5229 58.081 90.2769 59.784C90.1599 60.595 89.8889 61.322 89.4839 61.995C90.3379 62.686 90.9669 63.648 91.2709 64.805C91.5089 65.712 91.7529 67.601 90.4789 69.547C90.5599 69.674 90.6359 69.806 90.7069 69.941C91.4729 71.395 91.5219 73.038 90.8459 74.568C89.8209 76.887 87.2739 78.714 82.3279 80.675C79.2509 81.895 76.4359 82.675 76.4109 82.682C72.3429 83.737 68.6639 84.273 65.4789 84.273C59.6249 84.273 55.4339 82.48 53.0219 78.944C49.1399 73.25 49.6949 68.042 54.7179 63.022C57.4979 60.244 59.3459 56.148 59.7309 55.249C60.5069 52.587 62.5589 49.628 65.9699 49.628H65.9709C66.2579 49.628 66.5479 49.651 66.8339 49.696C68.3279 49.931 69.6339 50.791 70.5669 52.085C71.5739 50.833 72.5519 49.837 73.4369 49.275C74.7709 48.429 76.1039 48 77.3999 48ZM77.3999 52C76.8899 52 76.2669 52.217 75.5799 52.653C73.4469 54.006 69.3309 61.081 67.8239 63.833C67.3189 64.755 66.4559 65.145 65.6789 65.145C64.1369 65.145 62.9329 63.612 65.5379 61.664C69.4549 58.733 68.0809 53.942 66.2109 53.647C66.1289 53.634 66.0479 53.628 65.9699 53.628C64.2699 53.628 63.5199 56.558 63.5199 56.558C63.5199 56.558 61.3219 62.078 57.5459 65.851C53.7699 69.625 53.5749 72.654 56.3269 76.69C58.2039 79.442 61.7969 80.273 65.4789 80.273C69.2979 80.273 73.2129 79.379 75.4069 78.81C75.5149 78.782 88.8579 75.013 87.1679 71.805C86.8839 71.266 86.4159 71.05 85.8269 71.05C83.4469 71.05 79.1179 74.592 77.2569 74.592C76.8409 74.592 76.5479 74.415 76.4279 73.983C75.6349 71.138 88.4849 69.942 87.4019 65.821C87.2109 65.092 86.6929 64.796 85.9649 64.797C82.8199 64.797 75.7639 70.328 74.2849 70.328C74.1719 70.328 74.0909 70.295 74.0469 70.225C73.3059 69.029 73.7119 68.194 78.9349 65.033C84.1579 61.871 87.8239 59.969 85.7389 57.699C85.4989 57.437 85.1589 57.321 84.7459 57.321C81.5749 57.322 74.0829 64.14 74.0829 64.14C74.0829 64.14 72.0609 66.243 70.8379 66.243C70.5569 66.243 70.3179 66.132 70.1559 65.858C69.2889 64.396 78.2089 57.636 78.7119 54.847C79.0529 52.957 78.4729 52 77.3999 52Z"
+                fill="#FF9D0B"
+              ></path>
+              <path
+                class="origin-bottom-left transition-transform group-hover:rotate-6"
+                d="M56.3271 76.6898C53.5751 72.6538 53.7701 69.6248 57.5461 65.8508C61.3221 62.0778 63.5201 56.5578 63.5201 56.5578C63.5201 56.5578 64.3411 53.3518 66.2111 53.6468C68.0811 53.9418 69.4541 58.7328 65.5371 61.6638C61.6201 64.5938 66.3171 66.5848 67.8241 63.8328C69.3311 61.0808 73.4461 54.0058 75.5801 52.6528C77.7131 51.2998 79.2151 52.0578 78.7121 54.8468C78.2091 57.6358 69.2881 64.3958 70.1561 65.8588C71.0241 67.3208 74.0831 64.1398 74.0831 64.1398C74.0831 64.1398 83.6551 55.4288 85.7391 57.6988C87.8231 59.9688 84.1581 61.8708 78.9351 65.0328C73.7111 68.1938 73.3061 69.0288 74.0471 70.2248C74.7891 71.4208 86.3191 61.6998 87.4021 65.8208C88.4841 69.9418 75.6351 71.1378 76.4281 73.9828C77.2211 76.8288 85.4791 68.5978 87.1681 71.8048C88.8581 75.0128 75.5151 78.7818 75.4071 78.8098C71.0971 79.9278 60.1511 82.2968 56.3271 76.6898Z"
+                fill="#FFD21E"
+              ></path></svg
+          ></a>
+          <div class="pt-6 font-semibold text-black md:hidden md:pt-0">
+            Website
+          </div>
+
+          <a class="hover:underline" href="https://huggingface.co/models"
+            >Models</a
+          >
+          <a class="hover:underline" href="https://huggingface.co/datasets"
+            >Datasets</a
+          >
+          <a class="hover:underline" href="https://huggingface.co/spaces"
+            >Spaces</a
+          >
+          <a class="hover:underline" href="https://huggingface.co/pricing"
+            >Pricing</a
+          >
+          <a class="hover:underline" href="https://huggingface.co/docs">Docs</a>
+        </nav>
+      </footer>
+    </div>
+
+    <script>
+      import("/front/build/kube-5205e36/index.js");
+      window.moonSha = "kube-5205e36/";
+      window.hubConfig = JSON.parse(
+        `{"features":{"signupDisabled":false},"sshGitUrl":"git@hf.co","moonHttpUrl":"https://huggingface.co","captchaApiKey":"bd5f2066-93dc-4bdd-a64b-a24646ca3859","captchaDisabledOnSignup":true,"datasetsServerPublicUrl":"https://datasets-server.huggingface.co","stripePublicKey":"pk_live_x2tdjFXBCvXo2FFmMybezpeM00J6gPCAAc","environment":"production","userAgent":"HuggingFace (production)"}`
+      );
+    </script>
+
+    <!-- Stripe -->
+    <script>
+      if (["hf.co", "huggingface.co"].includes(window.location.hostname)) {
+        const script = document.createElement("script");
+        script.src = "https://js.stripe.com/v3/";
+        script.async = true;
+        document.head.appendChild(script);
+      }
+    </script>
+
+    <!-- Google analytics v4 -->
+    <script>
+      if (["hf.co", "huggingface.co"].includes(window.location.hostname)) {
+        const script = document.createElement("script");
+        script.src = "https://www.googletagmanager.com/gtag/js?id=G-8Q63TH4CSL";
+        script.async = true;
+        document.head.appendChild(script);
+
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+          if (window.dataLayer !== undefined) {
+            window.dataLayer.push(arguments);
+          }
+        }
+        gtag("js", new Date());
+        gtag("config", "G-8Q63TH4CSL", { page_path: "/papers" });
+        /// ^ See https://developers.google.com/analytics/devguides/collection/gtagjs/pages
+        gtag("consent", "default", {
+          ad_storage: "denied",
+          analytics_storage: "denied",
+        });
+        /// ^ See https://developers.google.com/tag-platform/gtagjs/reference#consent
+        /// TODO: ask the user for their consent and update this with gtag('consent', 'update')
+      }
+    </script>
+
+    <iframe
+      name="__privateStripeMetricsController3370"
+      frameborder="0"
+      allowtransparency="true"
+      scrolling="no"
+      role="presentation"
+      allow="payment *"
+      src="./huggingface-papers-raw_files/m-outer-3437aaddcdf6922d623e172c2d6f9278.html"
+      aria-hidden="true"
+      tabindex="-1"
+      style="
+        border: none !important;
+        margin: 0px !important;
+        padding: 0px !important;
+        width: 1px !important;
+        min-width: 100% !important;
+        overflow: hidden !important;
+        display: block !important;
+        visibility: hidden !important;
+        position: fixed !important;
+        height: 1px !important;
+        pointer-events: none !important;
+        user-select: none !important;
+      "
+    ></iframe>
+  </body>
+</html>
